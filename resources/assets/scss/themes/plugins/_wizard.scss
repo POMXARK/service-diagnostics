@@ -319,7 +319,7 @@ $sw-spacer: 2rem !default;
 
             &::after {
                 background: $danger;
-                border-left-color: scale-color($danger, $alert-border-level);
+                border-left-color: shift-color($danger, $alert-border-level);
             }
         }
 
@@ -404,16 +404,16 @@ $sw-spacer: 2rem !default;
                 }
 
                 &.done > a {
-                    border-color: scale-color($primary, $alert-border-level) !important;
+                    border-color: shift-color($primary, $alert-border-level) !important;
                     color: $primary !important;
-                    background: scale-color($primary, $alert-border-level) !important;
+                    background: shift-color($primary, $alert-border-level) !important;
 
                     h6 {
                         color: $primary !important;
                     }
 
                     &:after {
-                        border-left: 30px solid scale-color($primary, $alert-border-level);
+                        border-left: 30px solid shift-color($primary, $alert-border-level);
                     }
                 }
 

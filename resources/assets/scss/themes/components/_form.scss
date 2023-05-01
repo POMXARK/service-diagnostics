@@ -57,8 +57,8 @@ select.form-control {
 
             &.input-light-#{$color} {
                 &:checked {
-                    border-color: scale-color($value, $soft-bg-level);
-                    background-color: scale-color($value, $soft-bg-level);
+                    border-color: shift-color($value, $soft-bg-level);
+                    background-color: shift-color($value, $soft-bg-level);
 
                     &[type="checkbox"] {
                         background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$value}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>"));

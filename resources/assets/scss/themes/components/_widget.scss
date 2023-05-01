@@ -1553,7 +1553,7 @@
         li {
             width: 10px;
             height: 10px;
-            background-color: scale-color($primary, $soft-bg-level);
+            background-color: shift-color($primary, $soft-bg-level);
             margin: 0 6px;
             border-radius: 50px;
         }

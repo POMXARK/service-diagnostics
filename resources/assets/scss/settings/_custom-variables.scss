@@ -502,16 +502,20 @@ $table-caption-color:         $text-muted ;
 
 $table-bg-level:              -9 ;
 
+
 $table-variants: (
-  "primary":    scale-color($primary, $table-bg-level),
-  "secondary":  scale-color($secondary, $table-bg-level),
-  "success":    scale-color($success, $table-bg-level),
-  "info":       scale-color($info, $table-bg-level),
-  "warning":    scale-color($warning, $table-bg-level),
-  "danger":     scale-color($danger, $table-bg-level),
-  "light":      $light,
-  "dark":       $dark,
+    "primary":    shift-color($primary, $table-bg-level),
+    "secondary":  shift-color($secondary, $table-bg-level),
+    "success":    shift-color($success, $table-bg-level),
+    "info":       shift-color($info, $table-bg-level),
+    "warning":    shift-color($warning, $table-bg-level),
+    "danger":     shift-color($danger, $table-bg-level),
+    "light":      $light,
+    "dark":       $dark,
 ) ;
+
+
+
 // scss-docs-end table-variables
 
 
@@ -919,9 +923,9 @@ $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) ;
 
 $dropdown-link-color:               $body-color ;
 $dropdown-link-hover-color:         $primary;
-$dropdown-link-hover-bg:            scale-color($primary, -80%);
+$dropdown-link-hover-bg:            shift-color($primary, -80%);
 $dropdown-link-active-color:        $primary ;
-$dropdown-link-active-bg:           scale-color($primary, -80%) ;
+$dropdown-link-active-bg:           shift-color($primary, -80%) ;
 
 $dropdown-link-disabled-color:      $gray-600 ;
 
@@ -1133,7 +1137,7 @@ $alert-border-width:                $border-width ;
 
 $alert-bg-level:                    -10 ;
 $alert-border-level:                -9 ;
-$alert-scale-color:                 6 ;
+$alert-shift-color:                 6 ;
 
 $alert-dismissible-padding-r:       $alert-padding-x * 3 ; // 3x covers width of x plus default padding on either side
 
@@ -1161,7 +1165,7 @@ $list-group-border-radius:          $border-radius ;
 $list-group-item-padding-y:         $card-spacer-y /2;
 $list-group-item-padding-x:         $card-spacer-x;
 $list-group-item-bg-level:          -9;
-$list-group-item-scale-color:       6 ;
+$list-group-item-shift-color:       6 ;
 
 $list-group-hover-bg:               $gray-100 ;
 $list-group-active-color:           $component-active-color ;
