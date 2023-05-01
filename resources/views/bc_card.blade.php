@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	@include('./layouts/head')
-	@include('./layouts/head-bottom-link')
+	@include('layouts/head')
+	@include('layouts/head-bottom-link')
 </head>
 @include('layouts/layout-vertical')
 <!-- [ Main Content ] start -->
@@ -93,7 +93,7 @@
 				<h5>Image Caps</h5>
 				<hr>
 				<div class="card mb-3">
-					<img class="img-fluid card-img-top" src="@vite('resources/assets/images/slider/img-slide-3.jpg" alt="Card image cap">
+					<img class="img-fluid card-img-top" src="{{ asset('images/slider/img-slide-3.jpg') }}" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Card title</h5>
 						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -110,14 +110,14 @@
 						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 					</div>
-					<img class="img-fluid card-img-bottom" src="@vite('resources/assets/images/slider/img-slide-6.jpg" alt="Card image cap">
+					<img class="img-fluid card-img-bottom" src="{{ asset('images/slider/img-slide-6.jpg') }}" alt="Card image cap">
 				</div>
 			</div>
 			<div class="col-md-6 col-xl-4">
 				<h5>Image Overlays</h5>
 				<hr>
 				<div class="card bg-dark">
-					<img class="img-fluid card-img" src="@vite('resources/assets/images/slider/img-slide-7.jpg" alt="Card image">
+					<img class="img-fluid card-img" src="{{ asset('images/slider/img-slide-7.jpg') }}" alt="Card image">
 					<div class="card-img-overlay">
 						<h5 class="card-title text-white">Card title</h5>
 						<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -208,7 +208,7 @@
 				<hr>
 				<div class="card-group">
 					<div class="card">
-						<img class="img-fluid card-img-top" src="@vite('resources/assets/images/slider/img-slide-4.jpg" alt="Card image cap">
+						<img class="img-fluid card-img-top" src="{{ asset('images/slider/img-slide-4.jpg') }}" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -218,7 +218,7 @@
 						</div>
 					</div>
 					<div class="card">
-						<img class="img-fluid card-img-top" src="@vite('resources/assets/images/slider/img-slide-2.jpg" alt="Card image cap">
+						<img class="img-fluid card-img-top" src="{{ asset('images/slider/img-slide-2.jpg') }}" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -228,7 +228,7 @@
 						</div>
 					</div>
 					<div class="card">
-						<img class="img-fluid card-img-top" src="@vite('resources/assets/images/slider/img-slide-1.jpg" alt="Card image cap">
+						<img class="img-fluid card-img-top" src="{{ asset('images/slider/img-slide-1.jpg') }}" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -245,7 +245,7 @@
 	</div>
 </div>
 <!-- [ Main Content ] end -->
-@include('./layouts/footer')
-@include('./layouts/footer-bottom-link')
+@include('layouts/footer')
+
 </body>
 </html>

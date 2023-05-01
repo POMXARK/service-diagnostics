@@ -1,7 +1,7 @@
 <div class="mr-auto pc-mob-drp">
 	<ul class="list-unstyled">
 		<li class="dropdown pc-h-item">
-			<a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+			<a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#!" role="button" aria-haspopup="false" aria-expanded="false">
 				Level
 			</a>
 			<div class="dropdown-menu pc-h-dropdown">
@@ -75,7 +75,7 @@
 		</li>
 		<li class="dropdown pc-h-item">
 			<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-				<img src="@vite('resources/assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+				<img src="{{ asset('images/user/avatar-2.jpg') }}" alt="user-image" class="user-avtar">
 				<span>
 					<span class="user-name">Joseph William</span>
 					<span class="user-desc">Administrator</span>

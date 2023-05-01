@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    @include('./layouts/head')
-    @include('./layouts/head-bottom-link')
+    @include('layouts/head')
+    @include('layouts/head-bottom-link')
 </head>
 @include('layouts/layout-vertical')
 <!-- [ Main Content ] start -->
@@ -18,7 +18,7 @@
                             <h5 class="m-b-10">Dashboard sale</h5>
                         </div>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item">Dashboard sale</li>
                         </ul>
                     </div>
@@ -211,7 +211,7 @@
                                     <tbody>
                                         <tr>
                                             <td>HeadPhone</td>
-                                            <td><img src="@vite('resources/assets/images/widget/p1.jpg')" alt="" class="img-20"></td>
+                                            <td><img src="{{ asset('images/widget/p1.jpg') }}" alt="" class="img-20"></td>
                                             <td>
                                                 <div><label class="badge bg-light-warning">Pending</label></div>
                                             </td>
@@ -220,7 +220,7 @@
                                         </tr>
                                         <tr>
                                             <td>Iphone 6</td>
-                                            <td><img src="@vite('resources/assets/images/widget/p2.jpg')" alt="" class="img-20"></td>
+                                            <td><img src="{{ asset('images/widget/p2.jpg') }}" alt="" class="img-20"></td>
                                             <td>
                                                 <div><label class="badge bg-light-danger">Cancel</label></div>
                                             </td>
@@ -229,7 +229,7 @@
                                         </tr>
                                         <tr>
                                             <td>Jacket</td>
-                                            <td><img src="@vite('resources/assets/images/widget/p3.jpg')" alt="" class="img-20"></td>
+                                            <td><img src="{{ asset('images/widget/p3.jpg') }}" alt="" class="img-20"></td>
                                             <td>
                                                 <div><label class="badge bg-light-success">Success</label></div>
                                             </td>
@@ -238,7 +238,7 @@
                                         </tr>
                                         <tr>
                                             <td>Sofa</td>
-                                            <td><img src="@vite('resources/assets/images/widget/p4.jpg')" alt="" class="img-20"></td>
+                                            <td><img src="{{ asset('images/widget/p4.jpg') }}" alt="" class="img-20"></td>
                                             <td>
                                                 <div><label class="badge bg-light-danger">Cancel</label></div>
                                             </td>
@@ -247,7 +247,7 @@
                                         </tr>
                                         <tr>
                                             <td>Iphone 6</td>
-                                            <td><img src="@vite('resources/assets/images/widget/p2.jpg')" alt="" class="img-20"></td>
+                                            <td><img src="{{ asset('images/widget/p2.jpg') }}" alt="" class="img-20"></td>
                                             <td>
                                                 <div><label class="badge bg-light-success">Success</label></div>
                                             </td>
@@ -256,7 +256,7 @@
                                         </tr>
                                         <tr>
                                             <td>HeadPhone</td>
-                                            <td><img src="@vite('resources/assets/images/widget/p1.jpg')" alt="" class="img-20"></td>
+                                            <td><img src="{{ asset('images/widget/p1.jpg') }}" alt="" class="img-20"></td>
                                             <td>
                                                 <div><label class="badge bg-light-warning">Pending</label></div>
                                             </td>
@@ -265,7 +265,7 @@
                                         </tr>
                                         <tr>
                                             <td>Iphone 6</td>
-                                            <td><img src="@vite('resources/assets/images/widget/p2.jpg')" alt="" class="img-20"></td>
+                                            <td><img src="{{ asset('images/widget/p2.jpg') }}" alt="" class="img-20"></td>
                                             <td>
                                                 <div><label class="badge bg-light-danger">Cancel</label></div>
                                             </td>
@@ -447,12 +447,16 @@
         <!-- [ Main Content ] end -->
     </div>
 </div>
+
+
 <!-- [ Main Content ] end -->
-@include('./layouts/footer')
+@include('layouts/footer')
+
 <!-- Apex Chart , custom-chart js -->
-@vite(['resources/js/plugins/apexcharts.js','resources/js/pages/dashboard-sale.js'])
-@include('./layouts/footer-bottom-link')
+<script type="module" src="{{ asset('jquery_modules/js/plugins/apexcharts.min.js') }}"></script>
+<script type="module" src="{{ asset('jquery_modules/js/pages/dashboard-sale.js') }}"></script>
 
-</body>
 
-</html>
+{{--</body>--}}
+
+{{--</html>--}}

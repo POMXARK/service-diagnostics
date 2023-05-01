@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-	@include('./layouts/head')
-	@include('./layouts/head-bottom-link')
+	@include('layouts/head')
+	@include('layouts/head-bottom-link')
 </head>
 @include('layouts/layout-vertical')
 <!-- [ Main Content ] start -->
@@ -428,7 +428,7 @@
 	</div>
 </div>
 <!-- [ Main Content ] end --       >
- @include('./layouts/footer')
+ @include('layouts/footer')
 <script>
 	$('#exampleModal').on('show.bs.modal', function(event) {
 		var button = $(event.relatedTarget)
@@ -438,7 +438,7 @@
 		modal.find('.modal-body input').val(recipient)
 	})
 </script>
-@include('./layouts/footer-bottom-link')
+
 </body>
 
 </html>

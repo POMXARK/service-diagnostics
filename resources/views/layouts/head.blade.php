@@ -15,4 +15,4 @@
 
 
 <!-- Favicon icon -->
-<link rel="icon" href="@vite('resources/assets/images/favicon.svg" type="image/x-icon">
+<link rel="icon" href="images/favicon.svg" type="image/x-icon">

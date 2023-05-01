@@ -3,8 +3,8 @@
 
 <head>
 
-	@include('./layouts/head')
-	@include('./layouts/head-bottom-link')
+	@include('layouts/head')
+	@include('layouts/head-bottom-link')
 
 </head>
 
@@ -15,7 +15,7 @@
 			<div class="row align-items-center text-center">
 				<div class="col-md-12">
 					<div class="card-body">
-						<img src="@vite('resources/assets/images/logo-dark.svg" alt="" class="img-fluid mb-4">
+						<img src="{{ asset('images/logo-dark.svg') }}" alt="" class="img-fluid mb-4">
 						<h4 class="mb-3 f-w-400">Signin</h4>
 						<div class="input-group mb-3">
 							<span class="input-group-text"><i data-feather="mail"></i></span>
@@ -48,7 +48,6 @@
 <script src="assets/js/plugins/bootstrap.min.js"></script>
 <script src="assets/js/plugins/feather.min.js"></script>
 <script src="assets/js/pcoded.min.js"></script>
-@include('./layouts/footer-bottom-link')
 
 </body>
 

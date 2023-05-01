@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('./layouts/head')
-    @include('./layouts/head-bottom-link')
+    @include('layouts/head')
+    @include('layouts/head-bottom-link')
 </head>
 @include('layouts/layout-vertical')
 <!-- [ Main Content ] start -->
@@ -17,7 +17,7 @@
                             <h5 class="m-b-10">Apex Chart</h5>
                         </div>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="#!">Chart</a></li>
                             <li class="breadcrumb-item">Apex Chart</li>
                         </ul>
@@ -97,9 +97,10 @@
     </div>
 </div>
 <!-- [ Main Content ] end -->
-@include('./layouts/footer')
-<script src="assets/js/plugins/apexcharts.min.js"></script>
-<script src="assets/js/pages/chart-apex.js"></script>
-@include('./layouts/footer-bottom-link')
+@include('layouts/footer')
+
+<script type="module" src="{{ asset('jquery_modules/js/plugins/apexcharts.min.js') }}"></script>
+<script type="module" src="{{ asset('jquery_modules/js/pages/dashboard-sale.js') }}"></script>
+
 </body>
 </html>

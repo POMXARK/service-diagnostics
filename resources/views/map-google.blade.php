@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('./layouts/head')
-    @include('./layouts/head-bottom-link')
+    @include('layouts/head')
+    @include('layouts/head-bottom-link')
 </head>
 @include('layouts/layout-vertical')
 <!-- [ Main Content ] start -->
@@ -17,7 +17,7 @@
                             <h5 class="m-b-10">Google Map</h5>
                         </div>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="#!">Maps</a></li>
                             <li class="breadcrumb-item">Google Maps</li>
                         </ul>
@@ -58,13 +58,15 @@
         <!-- [ Main Content ] end -->
     </div>
 </section>
+
 <!-- [ Main Content ] end -->
-@include('./layouts/footer')
+@include('layouts/footer')
 <!-- google-map Js -->
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyDsucrEdmswqYrw0f6ej3bf4M4suDeRgNA"></script>
-<script src="assets/js/plugins/gmaps.min.js"></script>
-<script src="assets/js/pages/google-maps.js"></script>
-@include('./layouts/footer-bottom-link')
+
+{{--<script type="module" src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>--}}
+{{--<script type="module" src="http://maps.google.com/maps/api/js?key=AIzaSyDsucrEdmswqYrw0f6ej3bf4M4suDeRgNA"></script>--}}
+{{--<script type="module" src="../jquery_modules/js/plugins/gmaps.min.js"></script>--}}
+{{--<script type="module" src="../jquery_modules/js/pages/google-maps.js"></script>--}}
+
 </body>
 </html>

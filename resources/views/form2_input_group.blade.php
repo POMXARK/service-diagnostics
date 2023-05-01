@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    @include('./layouts/head')
-    @include('./layouts/head-bottom-link')
+    @include('layouts/head')
+    @include('layouts/head-bottom-link')
 </head>
 @include('layouts/layout-vertical')
 <!-- [ Main Content ] start -->
@@ -18,7 +18,7 @@
                             <h5 class="m-b-10">Input Groups</h5>
                         </div>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="#!">Form Components</a></li>
                             <li class="breadcrumb-item">Input Groups</li>
                         </ul>
@@ -248,7 +248,7 @@
     </div>
 </section>
 <!-- [ Main Content ] end -->
-@include('./layouts/footer')
-@include('./layouts/footer-bottom-link')</body>
+@include('layouts/footer')
+</body>
 
 </html>

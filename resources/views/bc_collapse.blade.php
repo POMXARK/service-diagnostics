@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	@include('./layouts/head')
-	@include('./layouts/head-bottom-link')
+	@include('layouts/head')
+	@include('layouts/head-bottom-link')
 </head>
 @include('layouts/layout-vertical')
 <!-- [ Main Content ] start -->
@@ -114,7 +114,7 @@
 	</div>
 </div>
 <!-- [ Main Content ] end -->
-@include('./layouts/footer')
-@include('./layouts/footer-bottom-link')
+@include('layouts/footer')
+
 </body>
 </html>
