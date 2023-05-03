@@ -137,7 +137,7 @@
 						<div class="progress mb-4">
 							<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
 						</div>
-						<button type="button" class="btn  btn-secondary bd-toggle-animated-progress" data-toggle="button" aria-pressed="false">Toggle animation</button>
+						<button type="button" class="btn  btn-secondary bd-toggle-animated-progress" data-bs-toggle="button" aria-pressed="false">Toggle animation</button>
 					</div>
 				</div>
 			</div>

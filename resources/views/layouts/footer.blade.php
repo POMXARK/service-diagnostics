@@ -45,16 +45,3 @@
     <![endif]-->
     <!-- Warning Section Ends -->
     <!-- Required Js -->
-
-{{--    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>--}}
-
-{{--    <script type="module" src="{{ asset('jquery_modules/js/popper.min.js') }}"></script>--}}
-    <script type="module" src="{{ asset('jquery_modules/js/vendor-all.min.js') }}"></script>
-{{--    <script type="module" src="{{ asset('jquery_modules/js/plugins/bootstrap.min.js') }}"></script>--}}
-    <script type="module" src="{{ asset('jquery_modules/js/plugins/feather.min.js') }}"></script>
-    <script type="module" src="{{ asset('jquery_modules/js/perfect-scrollbar.min.js') }}"></script>
-    <script type="module" src="{{ asset('jquery_modules/js/pcoded.min.js') }}"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script> -->
-    <!-- <script src="assets/js/plugins/clipboard.min.js"></script> -->
-    <!-- <script src="assets/js/uikit.min.js"></script> -->

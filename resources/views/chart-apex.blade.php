@@ -99,8 +99,6 @@
 <!-- [ Main Content ] end -->
 @include('layouts/footer')
 
-<script type="module" src="{{ asset('jquery_modules/js/plugins/apexcharts.min.js') }}"></script>
-<script type="module" src="{{ asset('jquery_modules/js/pages/dashboard-sale.js') }}"></script>
 
 </body>
 </html>

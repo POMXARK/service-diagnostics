@@ -48,10 +48,11 @@
 <!-- [ auth-signup ] end -->
 
 <!-- Required Js -->
-<script src="assets/js/vendor-all.min.js"></script>
-<script src="assets/js/plugins/bootstrap.min.js"></script>
-<script src="assets/js/plugins/feather.min.js"></script>
-<script src="assets/js/pcoded.min.js"></script>
+{{--<script src="assets/js/vendor-all.min.js"></script>--}}
+<script type="module" src="jquery_modules/js/perfect-scrollbar-v1.5.0.min.js"></script>
+{{--<script src="assets/js/plugins/bootstrap.min.js"></script>--}}
+{{--<script src="assets/js/plugins/feather.min.js"></script>--}}
+{{--<script src="assets/js/pcoded.min.js"></script>--}}
 
 
 </body>

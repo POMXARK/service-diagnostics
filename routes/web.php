@@ -109,6 +109,17 @@ Route::get('script_test', function () {
     return view('script_test');
 });
 
+Route::get('vue_test', function () {
+    return view('vue_test');
+});
+Route::get('bootstrap_popperjs_test', function () {
+    return view('bootstrap_popperjs_test');
+});
+
+Route::get('align_test', function () {
+    return view('align_test');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,8 +1,14 @@
+// document.addEventListener('DOMContentLoaded', function load() {
+//     // ожидать загрузку jQuery
+//     if (!window.$) return setTimeout(load, 50);
+//     //your synchronous or asynchronous jQuery-related code
+
+
 'use strict';
 $(document).ready(function() {
-    setTimeout(function() {
+    // setTimeout(function() {
         floatchart()
-    }, 700);
+    // }, 700);
     // [ campaign-scroll ] start
     var px = new PerfectScrollbar('.feed-scroll', {
         wheelSpeed: .5,
@@ -224,3 +230,6 @@ function floatchart() {
     });
     // [ satisfaction-chart ] end
 }
+
+
+// }, false);

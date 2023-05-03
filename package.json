@@ -38,6 +38,7 @@
         "resolve-url-loader": "^5.0.0",
         "sass": "=1.32.0",
         "sass-loader": "^8.0.0",
+        "vue-loader": "^17.0.1",
         "webpack": "^5.41.1"
     },
     "dependencies": {
@@ -49,6 +50,7 @@
         "gulp-sourcemaps": "^3.0.0",
         "jquery": "^3.6.4",
         "perfect-scrollbar": "^1.5.5",
-        "prismjs": "^1.29.0"
+        "prismjs": "^1.29.0",
+        "vue": "^3.2.36"
     }
 }

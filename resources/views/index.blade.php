@@ -452,8 +452,6 @@
 <!-- [ Main Content ] end -->
 @include('layouts/footer')
 
-<!-- Apex Chart , custom-chart js -->
-<script type="module" src="{{ asset('jquery_modules/js/plugins/apexcharts.min.js') }}"></script>
 <script type="module" src="{{ asset('jquery_modules/js/pages/dashboard-sale.js') }}"></script>
 
 

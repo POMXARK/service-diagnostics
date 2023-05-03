@@ -54,7 +54,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalLive">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-target="#exampleModalLive">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -100,7 +100,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalLong">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-target="#exampleModalLong">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -129,7 +129,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-target="#exampleModalCenter">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -150,11 +150,11 @@
 									</div>
 									<div class="modal-body">
 										<h5>Tooltips in a Button</h5>
-										<p>This <a href="#!" role="button" class="btn  btn-secondary tooltip-test" data-toggle="tooltip" title="Button Tooltip" data-container="#exampleModalPopovers">button</a>
+										<p>This <a href="#!" role="button" class="btn  btn-secondary tooltip-test" data-bs-toggle="tooltip" title="Button Tooltip" data-container="#exampleModalPopovers">button</a>
 											triggers a popover on click.</p>
 										<hr />
 										<h5>Tooltips in a modal</h5>
-										<p><a href="#!" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-container="#exampleModalPopovers">This link</a> and <a href="#!" class="tooltip-test" data-toggle="tooltip" title="Tooltip"
+										<p><a href="#!" class="tooltip-test" data-bs-toggle="tooltip" title="Tooltip" data-container="#exampleModalPopovers">This link</a> and <a href="#!" class="tooltip-test" data-bs-toggle="tooltip" title="Tooltip"
 												data-container="#exampleModalPopovers">that
 												link</a> have tooltips on hover.</p>
 									</div>
@@ -165,7 +165,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModalPopovers">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-target="#exampleModalPopovers">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -188,14 +188,14 @@
 										<div class="container-fluid bd-example-row">
 											<div class="row">
 												<div class="col-md-4">.col-md-4</div>
-												<div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+												<div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
 											</div>
 											<div class="row">
-												<div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-												<div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+												<div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+												<div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
 											</div>
 											<div class="row">
-												<div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+												<div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
 											</div>
 											<div class="row">
 												<div class="col-sm-9">
@@ -219,7 +219,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#gridSystemModal">Launch demo modal</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-target="#gridSystemModal">Launch demo modal</button>
 					</div>
 				</div>
 			</div>
@@ -231,8 +231,8 @@
 						<h5>Optional Sizes</h5>
 					</div>
 					<div class="card-body">
-						<button type="button" class="btn  btn-primary " data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-						<button type="button" class="btn  btn-primary " data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+						<button type="button" class="btn  btn-primary " data-bs-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+						<button type="button" class="btn  btn-primary " data-bs-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
 						<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
@@ -271,11 +271,11 @@
 					</div>
 					<div class="card-body">
 						<div class="btn-page">
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreen">Full screen</button>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreenSm">Full screen below sm</button>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreenMd">Full screen below md</button>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreenLg">Full screen below lg</button>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFullscreenXl">Full screen below xl</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-target="#exampleModalFullscreen">Full screen</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-target="#exampleModalFullscreenSm">Full screen below sm</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-target="#exampleModalFullscreenMd">Full screen below md</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-target="#exampleModalFullscreenLg">Full screen below lg</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-target="#exampleModalFullscreenXl">Full screen below xl</button>
 						</div>
 						<div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
 							<div class="modal-dialog modal-fullscreen">
@@ -390,9 +390,9 @@
 						<h5>Varying Modal Content</h5>
 					</div>
 					<div class="card-body btn-page">
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-						<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @bootstrap</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+						<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @bootstrap</button>
 						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">

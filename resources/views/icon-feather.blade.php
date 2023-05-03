@@ -76,7 +76,7 @@
 
     for (var i = 0, l = iconlist.length; i < l; i++) {
         $('#icon-wrapper').append(
-            '<div class="i-block" data-filter="' + iconlist[i] + '"  data-toggle="tooltip" title="' + iconlist[i] + '">' +
+            '<div class="i-block" data-filter="' + iconlist[i] + '"  data-bs-toggle="tooltip" title="' + iconlist[i] + '">' +
             '<i data-feather="' + iconlist[i] + '"></i>' +
             '</div>');
     }

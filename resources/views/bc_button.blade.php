@@ -206,7 +206,7 @@
 					</div>
 					<div class="card-body">
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+							<button class="btn  btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -214,7 +214,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+							<button class="btn  btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -222,7 +222,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+							<button class="btn  btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -230,7 +230,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+							<button class="btn  btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -238,7 +238,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+							<button class="btn  btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -246,7 +246,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+							<button class="btn  btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -267,7 +267,7 @@
 						<!-- Example split danger button -->
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-primary">Primary</button>
-							<button type="button" class="btn  btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -278,7 +278,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-secondary">Secondary</button>
-							<button type="button" class="btn  btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -289,7 +289,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-success">Success</button>
-							<button type="button" class="btn  btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -300,7 +300,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-danger">Danger</button>
-							<button type="button" class="btn  btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -311,7 +311,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-warning">Warning</button>
-							<button type="button" class="btn  btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -322,7 +322,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-info">Info</button>
-							<button type="button" class="btn  btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -343,7 +343,7 @@
 					</div>
 					<div class="card-body">
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+							<button class="btn  btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -351,7 +351,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+							<button class="btn  btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -359,7 +359,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+							<button class="btn  btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -367,7 +367,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-outline-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+							<button class="btn  btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -375,7 +375,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-outline-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+							<button class="btn  btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -383,7 +383,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+							<button class="btn  btn-outline-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -404,7 +404,7 @@
 						<!-- Example split danger button -->
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-outline-primary">Primary</button>
-							<button type="button" class="btn  btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -415,7 +415,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-outline-secondary">Secondary</button>
-							<button type="button" class="btn  btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -426,7 +426,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-outline-success">Success</button>
-							<button type="button" class="btn  btn-outline-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-outline-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -437,7 +437,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-outline-danger">Danger</button>
-							<button type="button" class="btn  btn-outline-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-outline-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -448,7 +448,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-outline-warning">Warning</button>
-							<button type="button" class="btn  btn-outline-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-outline-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -459,7 +459,7 @@
 						</div>
 						<div class="btn-group mb-2 mr-2">
 							<button type="button" class="btn  btn-outline-info">Info</button>
-							<button type="button" class="btn  btn-outline-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+							<button type="button" class="btn  btn-outline-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -480,7 +480,7 @@
 					</div>
 					<div class="card-body">
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+							<button class="btn  btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
 							<div class="dropdown-menu dropdown-menu-dark">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -488,7 +488,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+							<button class="btn  btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
 							<div class="dropdown-menu dropdown-menu-dark">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -496,7 +496,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+							<button class="btn  btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
 							<div class="dropdown-menu dropdown-menu-dark">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -504,7 +504,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+							<button class="btn  btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
 							<div class="dropdown-menu dropdown-menu-dark">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -512,7 +512,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+							<button class="btn  btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
 							<div class="dropdown-menu dropdown-menu-dark">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -520,7 +520,7 @@
 							</div>
 						</div>
 						<div class="btn-group mb-2 mr-2">
-							<button class="btn  btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+							<button class="btn  btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
 							<div class="dropdown-menu dropdown-menu-dark">
 								<a class="dropdown-item" href="#!">Action</a>
 								<a class="dropdown-item" href="#!">Another action</a>
@@ -662,7 +662,7 @@
 							<button type="button" class="btn  btn-secondary">1</button>
 							<button type="button" class="btn  btn-secondary">2</button>
 							<div class="btn-group" role="group">
-								<button id="btnGroupDrop1" type="button" class="btn  btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<button id="btnGroupDrop1" type="button" class="btn  btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Dropdown
 								</button>
 								<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -695,7 +695,7 @@
 									<button type="button" class="btn  btn-secondary">1</button>
 									<button type="button" class="btn  btn-secondary">2</button>
 									<div class="btn-group" role="group">
-										<button id="btnGroupDrop3" type="button" class="btn  btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+										<button id="btnGroupDrop3" type="button" class="btn  btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
 										<div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
 											<a class="dropdown-item" href="#!">Dropdown link</a>
 											<a class="dropdown-item" href="#!">Dropdown link</a>

@@ -18,7 +18,8 @@ mix.webpackConfig({
 });
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
+    .vue()
+    .sass('resources/css/app.scss', 'public/css')
     .sass('resources/assets/scss/style.scss', 'public/css')
     .css('resources/assets/fonts/feather.css', 'public/css')
     .css('resources/assets/fonts/fontawesome.css', 'public/css')
