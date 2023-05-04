@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ Route::get('/about_laravel', function () {
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('main');
 
 Route::get('bc_alert', function () {
     return view('bc_alert');
@@ -123,3 +124,5 @@ Route::get('align_test', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
