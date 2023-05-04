@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -14,23 +15,24 @@ class LoginController extends Controller
      *
      * @param  Request  $request
      *
+     * @return JsonResponse|RedirectResponse
      */
-    public function authenticate(Request $request)
+    public function authenticate(Request $request): JsonResponse|RedirectResponse
     {
-        return 'Done!';
-//        $credentials = $request->validate([
-//                                              'email' => ['required', 'email'],
-//                                              'password' => ['required'],
-//                                          ]);
-//
-//        if (Auth::attempt($credentials)) {
-//            $request->session()->regenerate();
-//
-//            return redirect()->intended('dashboard');
-//        }
-//
-//        return back()->withErrors([
-//                                      'email' => 'The provided credentials do not match our records.',
-//                                  ])->onlyInput('email');
+
+        $credentials = $request->validate([
+                                              'email' => ['required', 'email'],
+                                              'password' => ['required'],
+                                          ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+
+            return response()->json(['status' => true, 'redirect' => route('main')], 200);
+        }
+
+        return response()->json(['status' => false,
+                                  'error' => 'The provided credentials do not match our records.',
+                                  ]);
     }
 }
