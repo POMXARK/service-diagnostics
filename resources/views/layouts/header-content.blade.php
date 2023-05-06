@@ -1,7 +1,8 @@
 <div class="me-auto pc-mob-drp">
 	<ul class="list-unstyled">
 		<li class="dropdown pc-h-item">
-			<a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-bs-toggle="dropdown" href="#!" role="button" aria-haspopup="false" aria-expanded="false">
+			<a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-bs-toggle="dropdown" href="#!" role="button" aria-haspopup="false" aria-expanded="false"
+            >
 				Level
 			</a>
 			<div class="dropdown-menu pc-h-dropdown">
@@ -73,7 +74,7 @@
 				</form>
 			</div>
 		</li>
-		<li class="dropdown pc-h-item">
+		<li class="dropdown pc-h-item"  id="user-settings">
 			<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 				<img src="{{ asset('images/user/avatar-2.jpg') }}" alt="user-image" class="user-avtar">
 				<span>

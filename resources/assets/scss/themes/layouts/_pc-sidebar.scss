@@ -119,10 +119,24 @@
         }
     }
 
+    .m-footer {
+        position: absolute;
+        bottom: 0;
+        width: 280px;
+        height: $header-height;
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        background: $brand-color;
+
+        .logo-sm {
+            display: none;
+        }
+    }
+
     .navbar-content {
         position: relative;
-        height: calc(100vh - #{$header-height});
-        padding: 10px 0;
+        height: calc(93vh - #{$header-height});
     }
 
     .pc-submenu {

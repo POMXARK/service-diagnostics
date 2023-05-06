@@ -31,7 +31,7 @@
 	<!-- [ Mobile header ] End -->
 
 	<!-- [ navigation menu ] start -->
-	<nav class="pc-sidebar @@menuclass">
+	<nav class="pc-sidebar @@menuclass" id="sidebar">
 		<div class="navbar-wrapper">
 			<div class="m-header">
 				<a href="/" class="b-brand">
@@ -39,14 +39,25 @@
 					<img src="{{ asset('images/logo.svg') }}" alt="" class="logo logo-lg">
 					<img src="{{ asset('images/logo-sm.svg') }}" alt="" class="logo logo-sm">
 				</a>
+                <i class="fa-solid fa-circle-chevron-left"></i>
 			</div>
-			<div class="navbar-content">
+{{--            <style>--}}
+{{--                .navbar-wrapper:hover {--}}
+{{--                    background-color:#FF0000 !important; /* Цвет ссылки */--}}
+{{--                    overflow-y: auto !important;--}}
+{{--                }--}}
+{{--            </style>--}}
+			<div class="navbar-content" id="app">
 				<ul class="pc-navbar">
-					@include('layouts/menu-list')
+					    <vue-sidebar></vue-sidebar>
 				</ul>
 			</div>
+            <div class="m-footer">
+                <a href="/"> Hide menu < </a>
+            </div>
 		</div>
 	</nav>
+
 	<!-- [ navigation menu ] end -->
 	<!-- [ Header ] start -->
 	<header class="pc-header @@headerclass">

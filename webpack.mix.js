@@ -17,15 +17,16 @@ mix.webpackConfig({
     },
 });
 
-mix.js('resources/js/app.js', 'public/js')
-    .vue()
+mix
+    .js('resources/js/app.js', 'public/js')
     .sass('resources/css/app.scss', 'public/css')
     .sass('resources/assets/scss/style.scss', 'public/css')
     .css('resources/assets/fonts/feather.css', 'public/css')
     .css('resources/assets/fonts/fontawesome.css', 'public/css')
     .css('resources/assets/fonts/material.css', 'public/css')
-    .copy( 'resources/assets/images', 'public/images', false )
-    .copy( 'resources/assets/jquery_modules', 'public/jquery_modules', false )
-    .css( 'resources/css/plugins/bootstrap.min.css', 'public/css', false )
+    .copy( 'resources/assets/images', 'public/images' )
+    .copy( 'resources/assets/jquery_modules', 'public/jquery_modules' )
+    .css( 'resources/css/plugins/bootstrap.min.css', 'public/css' )
+    .vue()
     //.sourceMaps()
 ;
