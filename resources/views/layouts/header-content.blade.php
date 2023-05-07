@@ -87,7 +87,7 @@
 					<h5 class="text-overflow m-0"><span class="badge bg-light-primary"><a href="https://gumroad.com/dashboardkit" target="_blank">Upgrade to Pro</a></span></h5>
 				</div>
 
-				<a href="auth-signin" class="dropdown-item">
+				<a href="{{ route('logout') }}" class="dropdown-item">
 					<i class="material-icons-two-tone">chrome_reader_mode</i>
 					<span>Logout</span>
 				</a>

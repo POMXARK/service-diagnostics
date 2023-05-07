@@ -181,7 +181,6 @@ export default {
                 for (let i of adaptiveContent) {
                     i.classList.add('d-none')
                 }
-                // localStorage.removeItem("fullSidebar");
                 localStorage.setItem('fullSidebar', 'false');
             }, showSidebar() {
                 hideSidebarToggle.classList.remove('fa-rotate-180');
@@ -214,7 +213,6 @@ export default {
                 pcContainer.style.transition = timeTransition;
                 pcHeader.style.transition = timeTransition;
                 pageHeader.style.transition = timeTransition;
-                console.log(localStorage.getItem('fullSidebar'))
                 if (localStorage.getItem('fullSidebar') === 'false') {
                     sidebarSizeHandler.showSidebar()
                 } else {
@@ -224,6 +222,7 @@ export default {
         }
 
         window.addEventListener('load', () => {
+            // восстановительный метод после перезагрузки
             sidebarSizeHandler.onLoad()
         });
 
