@@ -15,3 +15,4 @@ app.component('vue-sidebar', Sidebar)
 app.mount('#app')
 
 import '../sass/app.scss';
+import '@fortawesome/fontawesome-free/js/all.js';

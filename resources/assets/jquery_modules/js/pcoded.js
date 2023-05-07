@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     feather.replace();
     // feather icon end
     // remove pre-loader start
-    setTimeout(function () {
+    // setTimeout(function () {
         document.querySelector('.loader-bg').remove();
-    }, 400);
+    // }, 400);
     // remove pre-loader end
     if (!document.querySelector('body').classList.contains('pc-horizontal')) {
         addscroller();
@@ -142,9 +142,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (topbarlinklist) {
         topbarlinklist.addEventListener('click', function (e) {
             var targetElement = e.target;
-            setTimeout(function () {
+            // setTimeout(function () {
                 targetElement.parentNodes.children[1].removeAttribute("style");
-            }, 1000);
+            // }, 1000);
         });
     }
     // Horizontal menu click js end
@@ -610,9 +610,9 @@ for (var t = 0; t < tc.length; t++) {
             // console.log(prodlike.parentNode);
             prodlike.parentNode.insertAdjacentHTML("beforeend", '<div class="pc-like"><div class="like-wrapper"><span><span class="pc-group"><span class="pc-dots"></span><span class="pc-dots"></span><span class="pc-dots"></span><span class="pc-dots"></span></span></span></div></div>');
             prodlike.parentNode.querySelector('.pc-like').classList.add('pc-like-animate');
-            setTimeout(function () {
+            // setTimeout(function () {
                 prodlike.parentNode.querySelector('.pc-like').remove();
-            }, 3000);
+            // }, 3000);
         } else {
             prodlike = event.target;
             prodlike.parentNode.querySelector('.pc-like').remove();
@@ -659,12 +659,12 @@ let slideDown = (target, duration = 0) => {
     target.style.removeProperty('padding-bottom');
     target.style.removeProperty('margin-top');
     target.style.removeProperty('margin-bottom');
-    window.setTimeout(() => {
+    // window.setTimeout(() => {
         target.style.removeProperty('height');
         target.style.removeProperty('overflow');
         target.style.removeProperty('transition-duration');
         target.style.removeProperty('transition-property');
-    }, duration);
+    // }, duration);
 }
 var slideToggle = (target, duration = 0) => {
     if (window.getComputedStyle(target).display === 'none') {

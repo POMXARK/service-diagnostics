@@ -34,27 +34,24 @@
 	<nav class="pc-sidebar @@menuclass" id="sidebar">
 		<div class="navbar-wrapper">
 			<div class="m-header">
-				<a href="/" class="b-brand">
+				<a href="/" class="b-brand adaptive-content">
 					<!-- ========   change your logo hear   ============ -->
+
 					<img src="{{ asset('images/logo.svg') }}" alt="" class="logo logo-lg">
 					<img src="{{ asset('images/logo-sm.svg') }}" alt="" class="logo logo-sm">
 				</a>
-                <i class="fa-solid fa-circle-chevron-left"></i>
+                <a id="hide-sidebar-toggle" class="d-md-none d-lg-block">
+                    <i class="fas fa-chevron-circle-left text-primary fs-3 text-end"
+                       id="hide-sidebar-toggle-icon"
+                       style="position: absolute; right: -10px;"></i>
+                </a>
+
 			</div>
-{{--            <style>--}}
-{{--                .navbar-wrapper:hover {--}}
-{{--                    background-color:#FF0000 !important; /* Цвет ссылки */--}}
-{{--                    overflow-y: auto !important;--}}
-{{--                }--}}
-{{--            </style>--}}
 			<div class="navbar-content" id="app">
 				<ul class="pc-navbar">
 					    <vue-sidebar></vue-sidebar>
 				</ul>
 			</div>
-            <div class="m-footer">
-                <a href="/"> Hide menu < </a>
-            </div>
 		</div>
 	</nav>
 

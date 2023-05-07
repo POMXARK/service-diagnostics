@@ -1,8 +1,8 @@
 'use strict';
 $(document).ready(function() {
-    setTimeout(function() {
+    // setTimeout(function() {
         floatchart()
-    }, 100);
+    // }, 100);
     // [ campaign-scroll ] start
     var px = new PerfectScrollbar('.product-scroll', {
         wheelSpeed: .5,

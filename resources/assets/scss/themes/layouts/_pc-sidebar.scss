@@ -136,7 +136,8 @@
 
     .navbar-content {
         position: relative;
-        height: calc(93vh - #{$header-height});
+        height: calc(100vh - #{$header-height});
+        padding: 10px 0;
     }
 
     .pc-submenu {

@@ -1,6 +1,6 @@
 <link href="/css/app.css" rel="stylesheet">
 <link href="/css/feather.css" rel="stylesheet">
-<link href="/css/fontawesome.css" rel="stylesheet">
+{{--<link href="/css/fontawesome.css" rel="stylesheet">--}}
 <link href="/css/material.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
 
