@@ -1,5 +1,7 @@
 <?php
 
+use BeyondCode\LaravelWebSockets\Facades\WebSocketsRouter;
+use Domain\TableWebsocket;
 use Illuminate\Support\Facades\Broadcast;
 
 /*
@@ -12,6 +14,8 @@ use Illuminate\Support\Facades\Broadcast;
 | used to check if an authenticated user can listen to the channel.
 |
 */
+
+WebSocketsRouter::webSocket('/ws/table/', TableWebsocket::class);
 
 Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;

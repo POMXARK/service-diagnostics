@@ -46,12 +46,19 @@
         "animate.css": "^4.1.1",
         "apexcharts": "^3.40.0",
         "browser-sync": "^2.29.1",
+        "datatables.net-bs5": "^1.13.4",
+        "datatables.net-plugins": "^1.13.4",
+        "datatables.net-responsive-bs5": "^2.4.1",
+        "datatables.net-rowreorder-bs5": "^1.3.3",
+        "datatables.net-select-bs5": "^1.6.2",
+        "datatables.net-vue3": "^2.1.0",
         "feather-icons": "^4.29.0",
         "gulp-file-include": "^2.3.0",
         "gulp-sourcemaps": "^3.0.0",
         "jquery": "^3.6.4",
         "perfect-scrollbar": "^1.5.5",
         "prismjs": "^1.29.0",
+        "pusher-js": "^8.0.2",
         "vue": "^3.2.36"
     }
 }

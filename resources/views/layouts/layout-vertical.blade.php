@@ -47,9 +47,9 @@
                 </a>
 
 			</div>
-			<div class="navbar-content" id="app">
+			<div class="navbar-content">
 				<ul class="pc-navbar">
-					    <vue-sidebar></vue-sidebar>
+					    <div id="vue-sidebar"></div>
 				</ul>
 			</div>
 		</div>

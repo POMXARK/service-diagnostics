@@ -7,6 +7,10 @@
             class="pc-mtext">Home</span></a>
     </li>
     <li class="pc-item">
+        <a href="/table" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
+            class="pc-mtext">Table</span></a>
+    </li>
+    <li class="pc-item">
         <a href="/" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
             class="pc-mtext">Dashboard</span></a>
     </li>

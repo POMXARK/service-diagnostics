@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GraphController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use Illuminate\Support\Facades\Route;
@@ -24,16 +25,21 @@ Route::get('/about_laravel', function () {
     return view('welcome');
 });
 
+Route::get('/ws/table', [GraphController::class, 'newEvent']);
+
 Route::middleware(['auth'])->group(function () {
 
     Route::get('/logout', [LogoutController::class, 'perform'])->name('logout');
-
     Route::get('/', function () {
         return view('index');
     })->name('main');
 
     Route::get('home', function () {
         return view('_home');
+    });
+
+    Route::get('table', function () {
+        return view('table');
     });
 
     Route::get('bc_alert', function () {

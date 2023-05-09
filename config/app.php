@@ -191,9 +191,14 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class, // for laravel websockets
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        //App\Providers\MyCustomAppProvider::class,
+
+        // аутентификация и регистрация
+        App\Providers\FortifyServiceProvider::class,
 
     ],
 
