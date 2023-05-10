@@ -60,7 +60,8 @@ export default {
 
             $('#table_id').DataTable({
                     "order": [[0, 'desc']],
-                    "pageLength": 20,
+                    "iDisplayLength": 10,
+                    "pageLength": 10,
                     destroy: true,
                     language,
                     rowReorder: {

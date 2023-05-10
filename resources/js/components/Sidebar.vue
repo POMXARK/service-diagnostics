@@ -7,6 +7,10 @@
             class="pc-mtext">Home</span></a>
     </li>
     <li class="pc-item">
+        <a href="/graphs" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
+            class="pc-mtext">Graphs</span></a>
+    </li>
+    <li class="pc-item">
         <a href="/table" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
             class="pc-mtext">Table</span></a>
     </li>
@@ -227,11 +231,11 @@ export default {
 
         window.addEventListener('load', () => {
             // восстановительный метод после перезагрузки
-            sidebarSizeHandler.onLoad()
+            //sidebarSizeHandler.onLoad()
         });
 
         hideSidebarToggle.onclick = function () {
-            sidebarSizeHandler.onClick()
+            //sidebarSizeHandler.onClick()
         }
     }
 }

@@ -45,6 +45,10 @@ Route::middleware(['auth'])->group(function () {
         return view('table');
     });
 
+    Route::get('graphs', function () {
+        return view('graphs');
+    });
+
     Route::get('bc_alert', function () {
         return view('bc_alert');
     });
