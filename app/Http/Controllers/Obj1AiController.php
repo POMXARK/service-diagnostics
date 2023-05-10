@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreObj1AiRequest;
 use App\Http\Requests\UpdateObj1AiRequest;
 use App\Models\Obj1Ai;
+use Domain\Interfaces\ObjAIInterface;
+use Illuminate\Http\JsonResponse;
 
 class Obj1AiController extends Controller
 {
@@ -82,5 +84,15 @@ class Obj1AiController extends Controller
     public function destroy(Obj1Ai $obj1Ai)
     {
         //
+    }
+
+    /*
+     *  квитировать
+     */
+    public function confirm(Obj1Ai $obj1Ai, ObjAIInterface $domainObj1Ai): JsonResponse
+    {
+        Obj1Ai::where('id', $obj1Ai->id)
+            ->update(['sts' => $domainObj1Ai->changeSts($obj1Ai->sts)]);
+        return response()->json(['status' => 'true'], 200);
     }
 }

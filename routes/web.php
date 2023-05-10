@@ -3,6 +3,7 @@
 use App\Http\Controllers\GraphController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\Obj1AiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/', function () {
         return view('index');
     })->name('main');
+
+    Route::get('confirm/{ObjAi}', [Obj1AiController::class, 'confirm']);
 
     Route::get('home', function () {
         return view('_home');

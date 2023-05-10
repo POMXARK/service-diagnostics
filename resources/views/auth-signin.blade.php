@@ -6,6 +6,6 @@
 	@include('layouts/head-bottom-link')
 </head>
     <body>
-        <div id="vue-auth-sign-in" route="authenticate"></div>
+        <div id="vue-auth-sign-in"></div>
     </body>
 </html>

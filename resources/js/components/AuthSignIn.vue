@@ -38,12 +38,13 @@
 
 <script>
 export default {
-    props: ['route'],
+    // props: ['route'],
     data() {
         return {
             email: "",
             password: "",
-            error: null
+            error: null,
+            route: '/authenticate',
         };
     },
     methods: {

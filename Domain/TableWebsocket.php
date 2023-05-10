@@ -17,22 +17,31 @@ class TableWebsocket implements MessageComponentInterface
     }
 
     public function onOpen(ConnectionInterface $conn) {
-        // Store the new connection to send messages to later
+        $socketId = sprintf('%d.%d', random_int(1, 1000000000), random_int(1, 1000000000));
+        $conn->socketId = $socketId;
+        $conn->app = new \stdClass();
+        $conn->app->id = 'my_app';
         $this->clients->attach($conn);
         echo "New connection! ({$conn->resourceId})\n";
-        $conn->send('{"value_1": ' . json_encode($this->db::query('SELECT * FROM obj1_ai')->fetchAll(\PDO::FETCH_ASSOC)) . '}');
+        $sql = 'SELECT
+                    id, idobj,idai, datein, mode, aimax, aimean, aimin, statmin,
+                    statmax, mlmin, mlmax, err, sts, dateout, datecheck, cmnt
+                FROM obj1_ai
+                WHERE err > 0
+                AND sts = 1';
+        $conn->send('{"value_1": ' . json_encode($this->db::query($sql)->fetchAll(\PDO::FETCH_NUM)) . '}');
     }
 
-    public function onMessage(ConnectionInterface $from, $msg) {
-        $numRecv = count($this->clients) - 1;
-        echo sprintf('Connection %d sending message "%s" to %d other connection%s' . "\n"
-            , $from->resourceId, $msg, $numRecv, $numRecv == 1 ? '' : 's');
-
+    public function onMessage(ConnectionInterface $conn, $msg) {
+        $sql = 'SELECT
+                    id, idobj,idai, datein, mode, aimax, aimean, aimin, statmin,
+                    statmax, mlmin, mlmax, err, sts, dateout, datecheck, cmnt
+                FROM obj1_ai
+                WHERE err > 0
+                AND sts = 1';
+        $data =  '{"value_1": '.  json_encode($this->db::query($sql)->fetchAll(\PDO::FETCH_NUM)) .'}';
         foreach ($this->clients as $client) {
-            if ($from !== $client) {
-                // The sender is not the receiver, send to each client connected
-                $client->send($msg);
-            }
+            $client->send($data );
         }
     }
 
