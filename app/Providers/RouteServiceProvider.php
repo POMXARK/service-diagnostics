@@ -38,7 +38,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/web.php'));
         });
 
-        Route::model('ObjAi', Obj1Ai::class);
+        // Route::model('ObjAi', Obj1Ai::class); // select *
+
+        Route::bind('ObjAi', function ($value, $route) {
+            return Obj1Ai::select(['id','sts'])->where('id', $value)->first();
+        });
     }
 
     /**

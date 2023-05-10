@@ -200,6 +200,7 @@ return [
         // аутентификация и регистрация
         App\Providers\FortifyServiceProvider::class,
 
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*
