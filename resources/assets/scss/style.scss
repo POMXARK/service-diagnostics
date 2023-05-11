@@ -7,13 +7,16 @@ File: style.css
 =========================================================================
 =================================================================================== */
 
+// Font-Awesome
+//@import "node_modules/font-awesome/scss/font-awesome";
+
 // main framework
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "settings/custom-variables";
 @import "settings/theme-variables";
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap";
 
 // main framework
 @import "themes/generic";
@@ -32,7 +35,7 @@ File: style.css
 @import "themes/components/badge";
 @import "themes/components/button";
 @import "themes/components/dropdown";
-@import "themes/components/card";
+@import "themes/components/card"; // small long
 @import "themes/components/progress";
 @import "themes/components/table";
 @import "themes/components/tabs";

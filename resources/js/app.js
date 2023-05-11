@@ -6,6 +6,7 @@ import Welcome from './components/Welcome'
 import AuthSignIn from "./components/AuthSignIn.vue";
 import Sidebar from "./components/Sidebar.vue";
 import Table from "./components/Table.vue";
+import Graphs from "./components/Graphs.vue";
 
 // Список компонентов и корневых элементов, для рендера
 let renderComponents = [
@@ -24,6 +25,10 @@ let renderComponents = [
     {
         rootSelector: '#vue-auth-sign-in',
         component: AuthSignIn,
+    },
+    {
+        rootSelector: '#vue-graphs',
+        component: Graphs,
     },
     ]
 
