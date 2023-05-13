@@ -14,7 +14,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 mix.webpackConfig({
     plugins: [
-    //new BundleAnalyzerPlugin()
+     new BundleAnalyzerPlugin() // для оценки относительного размера js файлов, необходимо при оптимизации
     ],
     stats: {
         children: true,
@@ -33,8 +33,33 @@ mix
     .copy( 'resources/assets/jquery_modules', 'public/jquery_modules' )
     .css( 'resources/css/plugins/bootstrap.min.css', 'public/css' )
     .sourceMaps()
-    //.compress()
 ;
 
-//mix.extract([ 'jquery'], 'vendor.js');
+mix.autoload({
+    jquery: ['$', 'window.jQuery', 'jQuery', 'jquery'],
+    validate:'jquery-validation',
+    DataTable : 'datatables.net-bs',
+});
+
+mix.extract([
+    'vue',
+    '@vue',
+    'jquery',
+    'bootstrap',
+    'bootstrap-sass',
+    '@popperjs/core/lib',
+    'datatables.net',
+    'datatables.net-vue3',
+    'datatables.net-bs',
+    'datatables.net-bs5',
+    'datatables.net-responsive',
+    'datatables.net-responsive-bs5/css',
+    'datatables.net-plugins/i18n',
+    'perfect-scrollbar',
+    'axios',
+    'css-loader',
+    'style-loader',
+    'vue-loader'
+], 'js/vendor.js');
+
 //mix.compress();
