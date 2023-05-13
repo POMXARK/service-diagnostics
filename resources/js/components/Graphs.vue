@@ -4,9 +4,13 @@
         <select id="count_points" className="align-items-right">
             <option value="6">6</option>
             <option selected="selected" value="24">24</option>
-            <option value="70">70</option>
+            <option value="60">60</option>
         </select>
-        <div id="chart"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="chart"></div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -54,7 +58,7 @@ export default {
         var options = {
             series: [],
             chart: {
-                height: 350,
+                height: 550,
                 type: 'line',
                 dropShadow: {
                     enabled: true,
@@ -154,6 +158,10 @@ export default {
                     categories: _categoriesArr
                 }
             })
+        }
+
+        document.getElementById('count_points').onchange = function (event) {
+            socket_graph.send(event.target.value);
         }
 
         // socket_graph.onmessage = function (e) {

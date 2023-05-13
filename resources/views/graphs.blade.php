@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    @include('layouts/head')
-    @include('layouts/head-bottom-link')
+@include('layouts/head')
+@include('layouts/head-bottom-link')
 </head>
 <body>
 @include('layouts/layout-vertical')
@@ -12,5 +11,6 @@
         <div id="vue-graphs"></div>
     </div>
 </div>
+<script type="module" src="/js/app.js"></script>
 </body>
 </html>

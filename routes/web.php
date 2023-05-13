@@ -45,6 +45,10 @@ Route::middleware(['auth'])->group(function () {
         return view('table');
     });
 
+    Route::get('apexcharts_test', function (){
+        return view('apexcharts_test');
+    });
+
     Route::get('graphs', function () {
         return view('graphs');
     });

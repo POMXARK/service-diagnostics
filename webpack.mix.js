@@ -14,7 +14,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 mix.webpackConfig({
     plugins: [
-     new BundleAnalyzerPlugin() // для оценки относительного размера js файлов, необходимо при оптимизации
+    // new BundleAnalyzerPlugin() // для оценки относительного размера js файлов, необходимо при оптимизации
     ],
     stats: {
         children: true,
