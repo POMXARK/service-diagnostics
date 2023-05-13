@@ -1,7 +1,7 @@
 <template>
-    <div id="all_graph"  class="card-body">
+    <div id="all_graph" className="card-body">
 
-        <select  id="count_points" class="align-items-right">
+        <select id="count_points" className="align-items-right">
             <option value="6">6</option>
             <option selected="selected" value="24">24</option>
             <option value="70">70</option>
@@ -11,18 +11,29 @@
 </template>
 
 <script>
+
+// import VueApexCharts from "vue3-apexcharts";
+
 export default {
+    // components: {
+    //     apexchart: VueApexCharts,
+    // },
     mounted() {
-        function setApexChart(graphs,count_points_selected, skip_value = []) {
-            // ???
-            let dataset_apex_arr =[];
+
+        let _dataset_apex_arr = [], _categoriesArr = []
+
+        function setApexChart(graphs, count_points_selected, skip_value = []) {
+            // сколько штук выводить обработчик фильтра id="count_points" ( перенести на бэк)
+            // не работает
+            console.log('count_points_selected: ', count_points_selected)
+            let dataset_apex_arr = [];
             let list_labels = new Set;
             for (const [key, value] of Object.entries(graphs)) {
 
                 let list_current = [];
                 let slice_value = value.slice(-(count_points_selected))
 
-                if  (skip_value.length > 0 && (skip_value.indexOf( key ) !== -1 )){
+                if (skip_value.length > 0 && (skip_value.indexOf(key) !== -1)) {
                 } else {
 
                     for (const [key, el] of Object.entries(slice_value)) {
@@ -33,7 +44,8 @@ export default {
                     dataset_apex_arr.push({
                         name: key,
                         data: list_current,
-                    })}
+                    })
+                }
 
             }
             return [dataset_apex_arr, list_labels]
@@ -55,7 +67,8 @@ export default {
                 toolbar: {
                     show: true
                 }
-            }, colors: ['#77B6EA', '#545454','#F44336', '#E91E63', '#9C27B0', '#98CE00', '#16E0BD',  '#78C3FB', '#89A6FB', '#98838F'],
+            },
+            colors: ['#77B6EA', '#545454', '#F44336', '#E91E63', '#9C27B0', '#98CE00', '#16E0BD', '#78C3FB', '#89A6FB', '#98838F'],
             dataLabels: {
                 enabled: true,
             },
@@ -74,7 +87,7 @@ export default {
 
         }
 
-        function updateApexChart(dataset_apex_arr,list_labels) {
+        function updateApexChart(dataset_apex_arr, list_labels) {
             //???
             let categoriesArr = [];
             var chart = new ApexCharts(document.querySelector("#chart"), options);
@@ -86,7 +99,8 @@ export default {
                 xaxis: {
                     categories: categoriesArr
                 }
-            })}
+            })
+        }
 
         let i;
 
@@ -127,23 +141,40 @@ export default {
         const socket_graph =
             new WebSocket(`ws://${process.env.MIX_PUSHER_HOST}:${process.env.MIX_PUSHER_PORT}/ws/graphs/`);
         socket_graph.onmessage = function (e) {
-            // Обработчик события  (Jquery)
-            let graphs = {};
-            let current_values = get_data(e.data);
-            // выбранные датчики
-            let count_points_selected = $( "#count_points option:selected" ).text();
-            if (_.isEqual(current_values, window.global_values) === false ||
-                _.isEqual(count_points_selected, window.global_count_points_selected) === false){
-                window.global_values = current_values;
-                window.global_count_points_selected = count_points_selected;
+            let out = get_data(e.data);
+            _dataset_apex_arr = out['series'];
+            _categoriesArr = out['categories'];
+            console.log('_dataset_apex_arr: ', _dataset_apex_arr);
+            console.log('_categoriesArr: ', _categoriesArr);
+            let chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+            chart.updateOptions({
+                series: _dataset_apex_arr,
+                xaxis: {
+                    categories: _categoriesArr
+                }
+            })
+        }
 
-                // получить данные
-                graphs = getDataAllGraph(graphs, current_values, "date", 5);
-
-                const [dataset_apex_arr, list_labels] = setApexChart(graphs,count_points_selected)
-
-                updateApexChart(dataset_apex_arr,list_labels);
-            }}
+        // socket_graph.onmessage = function (e) {
+        //     // Обработчик события  (Jquery)
+        //     let graphs = {};
+        //     let current_values = get_data(e.data);
+        //     // выбранные датчики
+        //     let count_points_selected = $( "#count_points option:selected" ).text();
+        //     if (_.isEqual(current_values, window.global_values) === false ||
+        //         _.isEqual(count_points_selected, window.global_count_points_selected) === false){
+        //         window.global_values = current_values;
+        //         window.global_count_points_selected = count_points_selected;
+        //
+        //         // получить данные
+        //         graphs = getDataAllGraph(graphs, current_values, "date", 5);
+        //
+        //         const [dataset_apex_arr, list_labels] = setApexChart(graphs,count_points_selected)
+        //
+        //         updateApexChart(dataset_apex_arr,list_labels);
+        //     }
+        // }
     }
 }
 </script>

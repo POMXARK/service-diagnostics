@@ -23,15 +23,17 @@ class GraphsWebsocket implements MessageComponentInterface
         $conn->app->id = 'my_app';
         $this->clients->attach($conn);
         echo "New connection! ({$conn->resourceId})\n";
-        $sql = 'SELECT *
+        $sql = 'SELECT ai1, ai2, ai3, ai4,ai5, ai6, ai7, ai8, ai9, ai10
                 FROM obj1_cmn';
-        $conn->send('{"value_1": ' . json_encode($this->db::query($sql)->fetchAll(\PDO::FETCH_ASSOC)) . '}');
+        $categories = '"categories": ' . json_encode(array_merge(...$this->db::query('SELECT date FROM obj1_cmn')->fetchAll(\PDO::FETCH_NUM)));
+        $rez = SerializeGraph::getGraphData($this->db::query($sql)->fetchAll(\PDO::FETCH_ASSOC));
+        $conn->send('{"value_1":{ ' . $categories . ', "series": '  . json_encode($rez) . '}}');
     }
 
     public function onMessage(ConnectionInterface $conn, $msg) {
         $sql = 'SELECT *
                 FROM obj1_cmn';
-        $data =  '{"value_1": '.  json_encode($this->db::query($sql)->fetchAll(\PDO::FETCH_ASSOC)) .'}';
+        $data =  '{"value_1":'.  json_encode($this->db::query($sql)->fetchAll(\PDO::FETCH_ASSOC)) .'}';
         foreach ($this->clients as $client) {
             $client->send($data );
         }
