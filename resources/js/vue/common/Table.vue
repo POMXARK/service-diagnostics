@@ -1,7 +1,7 @@
 <template>
     <DataTable id="table_id" class="display nowrap table table-hover" style="width:100%">
         <thead>
-        <tr id="table_fields_names">E
+        <tr id="table_fields_names">
             <td>id</td>
             <td>idobj</td>
             <td>idai</td>
@@ -98,6 +98,6 @@ export default {
 
 <style lang="scss" scoped>
 // Datatables BS5
-@import "~datatables.net-bs5/css/dataTables.bootstrap5.css";
-@import "~datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css";
+@import "../../../../node_modules/datatables.net-bs5/css/dataTables.bootstrap5.css";
+@import "../../../../node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css";
 </style>

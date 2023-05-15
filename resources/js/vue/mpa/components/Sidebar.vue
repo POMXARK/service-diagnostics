@@ -3,19 +3,23 @@
         <label class="adaptive-content">Navigation</label>
     </li>
     <li class="pc-item">
-        <a href="/home" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
+        <a href="/mpa/home" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
             class="pc-mtext">Home</span></a>
     </li>
     <li class="pc-item">
-        <a href="/graphs" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
+        <a href="/mpa/graphs" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
             class="pc-mtext">Graphs</span></a>
     </li>
     <li class="pc-item">
-        <a href="/table" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
+        <a href="/mpa/sensors" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
+            class="pc-mtext">Sensors</span></a>
+    </li>
+    <li class="pc-item">
+        <a href="/mpa/table" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
             class="pc-mtext">Table</span></a>
     </li>
     <li class="pc-item">
-        <a href="/" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
+        <a href="/mpa/public" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
             class="pc-mtext">Dashboard</span></a>
     </li>
     <li class="pc-item pc-caption">
@@ -69,11 +73,11 @@
         <span>Tones of readymade charts</span>
     </li>
     <li class="pc-item adaptive-content">
-        <a href="chart-apex" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">bubble_chart</i></span><span
+        <a href="/mpa/chart-apex" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">bubble_chart</i></span><span
             class="pc-mtext">Chart</span></a>
     </li>
     <li class="pc-item adaptive-content">
-        <a href="map-google" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">my_location</i></span><span
+        <a href="/mpa/map-google" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">my_location</i></span><span
             class="pc-mtext">Maps</span></a>
     </li>
     <li class="pc-item pc-caption adaptive-content">
@@ -131,7 +135,7 @@
             </li>
         </ul>
     </li>
-    <li class="pc-item"><a href="sample-page" class="pc-link "><span class="pc-micon"><i
+    <li class="pc-item"><a href="/mpa/sample-page" class="pc-link "><span class="pc-micon"><i
         class="material-icons-two-tone">storefront</i></span><span class="pc-mtext">Sample page</span></a></li>
 
 </template>

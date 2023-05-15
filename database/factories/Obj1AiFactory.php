@@ -17,7 +17,23 @@ class Obj1AiFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'id'        => fake()->unique()->randomNumber(),
+            'idobj'     => fake()->randomNumber(),
+            'idai'      => fake()->randomNumber(),
+            'datein'    => fake()->dateTimeThisMonth(),
+            'mode'      => fake()->randomNumber(),
+            'aimax'     => fake()->randomNumber(),
+            'aimean'    => fake()->randomNumber(),
+            'aimin'     => fake()->randomNumber(),
+            'statmin'   => fake()->randomNumber(),
+            'statmax'   => fake()->randomNumber(),
+            'mlmin'     => fake()->randomNumber(),
+            'mlmax'     => fake()->randomNumber(),
+            'err'       => fake()->randomNumber(),
+            'sts'       => fake()->randomNumber(),
+            'dateout'   => fake()->dateTimeThisMonth(),
+            'datecheck' => fake()->dateTimeThisMonth(),
+            'cmnt'      => fake()->randomNumber(),
         ];
     }
 }

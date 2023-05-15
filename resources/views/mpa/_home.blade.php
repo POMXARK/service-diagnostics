@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('layouts/head')
-    @include('layouts/head-bottom-link')
+    @include('layouts.head')
+    @include('layouts.head-bottom-link')
 </head>
 <body>
-@include('layouts/layout-vertical')
+@include('layouts.layout-vertical')
 @php($faker = Faker\Factory::create('en_US'))
 <div class="pc-container ">
     <div class="card p-3">
