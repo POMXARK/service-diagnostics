@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Obj1Ai;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,23 +18,23 @@ class Obj1AiFactory extends Factory
     public function definition()
     {
         return [
-            'id'        => fake()->unique()->randomNumber(),
-            'idobj'     => fake()->randomNumber(),
-            'idai'      => fake()->randomNumber(),
+            'id'        => Obj1Ai::max('id') + 1 ?? 0,
+            'idobj'     => fake()->numberBetween(1,10),
+            'idai'      => fake()->numberBetween(0,9),
             'datein'    => fake()->dateTimeThisMonth(),
-            'mode'      => fake()->randomNumber(),
-            'aimax'     => fake()->randomNumber(),
-            'aimean'    => fake()->randomNumber(),
-            'aimin'     => fake()->randomNumber(),
-            'statmin'   => fake()->randomNumber(),
-            'statmax'   => fake()->randomNumber(),
-            'mlmin'     => fake()->randomNumber(),
-            'mlmax'     => fake()->randomNumber(),
-            'err'       => fake()->randomNumber(),
-            'sts'       => fake()->randomNumber(),
+            'mode'      => fake()->numberBetween(1,10),
+            'aimax'     => fake()->numberBetween(1,100),
+            'aimean'    => fake()->numberBetween(1,100),
+            'aimin'     => fake()->numberBetween(1,100),
+            'statmin'   => fake()->numberBetween(1,100),
+            'statmax'   => fake()->numberBetween(1,100),
+            'mlmin'     => fake()->numberBetween(1,100),
+            'mlmax'     => fake()->numberBetween(1,100),
+            'err'       => fake()->numberBetween(1,100),
+            'sts'       => fake()->randomElement([1,2]),
             'dateout'   => fake()->dateTimeThisMonth(),
             'datecheck' => fake()->dateTimeThisMonth(),
-            'cmnt'      => fake()->randomNumber(),
+            'cmnt'      => fake()->numberBetween(1,10),
         ];
     }
 }
