@@ -30,7 +30,7 @@ mix
     .css('resources/assets/fonts/fontawesome.css', 'public/css')
     .css('resources/assets/fonts/material.css', 'public/css')
     .copy( 'resources/assets/images', 'public/images' )
-    .copy( 'resources/assets/jquery_modules', 'public/jquery_modules' )
+    .copy( 'resources/assets/jquery_modules', 'public/mpa/jquery_modules' )
     .css( 'resources/css/plugins/bootstrap.min.css', 'public/css' )
     .sourceMaps()
 ;
@@ -59,7 +59,8 @@ mix.extract([
     'axios',
     'css-loader',
     'style-loader',
-    'vue-loader'
+    'vue-loader',
+    'vue-router'
 ], 'js/vendor.js');
 
 //mix.compress();

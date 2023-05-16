@@ -22,7 +22,7 @@ Route::get('spa/{any?}', function () {
 });
 
 Route::get('auth-signin', function () {
-    return view('auth-signin');
+    return view('mpa/auth-signin');
 })->name('login');
 
 Route::post('/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');

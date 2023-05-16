@@ -45,13 +45,8 @@
                        id="hide-sidebar-toggle-icon"
                        style="position: absolute; right: -10px;"></i>
                 </a>
-
 			</div>
-			<div class="navbar-content">
-				<ul class="pc-navbar">
-					    <div id="vue-sidebar"></div>
-				</ul>
-			</div>
+			    <div id="vue-sidebar"></div>
 		</div>
 	</nav>
 

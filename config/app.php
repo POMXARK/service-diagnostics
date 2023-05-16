@@ -198,7 +198,7 @@ return [
         //App\Providers\MyCustomAppProvider::class,
 
         // аутентификация и регистрация
-        App\Providers\FortifyServiceProvider::class,
+        // App\Providers\FortifyServiceProvider::class,
 
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
