@@ -243,6 +243,7 @@ function horizontalmobilemenuclick() {
 }
 
 // Menu click start
+// инициализация обработчика sidebar
 function addscroller() {
     rmmini();
     menuclick();
@@ -295,6 +296,7 @@ function menuclick() {
                     var tmp = targetElement.children[1];
                     if (tmp) {
                         // targetElement.parentNode.children[1].style.display = "block";
+                        targetElement.parentNode.children[1].removeAttribute('style');
                         slideDown(targetElement.parentNode.children[1], 200);
                     }
                 }
@@ -659,12 +661,12 @@ let slideDown = (target, duration = 0) => {
     target.style.removeProperty('padding-bottom');
     target.style.removeProperty('margin-top');
     target.style.removeProperty('margin-bottom');
-    // window.setTimeout(() => {
+    window.setTimeout(() => {
         target.style.removeProperty('height');
         target.style.removeProperty('overflow');
         target.style.removeProperty('transition-duration');
         target.style.removeProperty('transition-property');
-    // }, duration);
+    }, duration);
 }
 var slideToggle = (target, duration = 0) => {
     if (window.getComputedStyle(target).display === 'none') {
