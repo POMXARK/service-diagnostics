@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    @include('layouts.head')
-    @include('layouts.head-bottom-link')
-</head>
-
-<!-- [ Main Content ] start -->
-<section class="pc-container">
-    <div class="pcoded-content">
+@extends('layouts.base',
+    ['breadcrumbTitle' => 'Dashboard sale',
+    'to'               => '/mpa/home',
+    'toName'           => 'Home'
+    ]
+)
+@section('content')
         <!-- [ breadcrumb ] start -->
         <div class="page-header">
             <div class="page-block">
@@ -296,14 +292,4 @@
             <!-- [ form-element ] end -->
         </div>
         <!-- [ Main Content ] end -->
-    </div>
-</section>
-<!-- [ Main Content ] end -->
-@include('layouts.footer')
-<script>
-    $('#customCheckint1').prop('indeterminate', true)
-</script>
-
-</body>
-
-</html>
+@endsection

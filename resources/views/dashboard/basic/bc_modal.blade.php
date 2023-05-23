@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	@include('layouts/head')
-	@include('layouts/head-bottom-link')
-</head>
-
-<!-- [ Main Content ] start -->
-<div class="pc-container">
-	<div class="pcoded-content">
+@extends('layouts.base',
+    ['breadcrumbTitle' => 'Dashboard sale',
+    'to'               => '/mpa/home',
+    'toName'           => 'Home'
+    ]
+)
+@section('content')
 		<!-- [ Main Content ] start -->
 		<div class="row">
 			<!-- [ demo-modal ] start -->
@@ -425,20 +421,4 @@
 			<!-- [ varying-modal ] end -->
 		</div>
 		<!-- [ Main Content ] end -->
-	</div>
-</div>
-<!-- [ Main Content ] end --       >
- @include('layouts/footer')
-<script>
-	$('#exampleModal').on('show.bs.modal', function(event) {
-		var button = $(event.relatedTarget)
-		var recipient = button.data('whatever')
-		var modal = $(this)
-		modal.find('.modal-title').text('New message to ' + recipient)
-		modal.find('.modal-body input').val(recipient)
-	})
-</script>
-
-</body>
-
-</html>
+@endsection

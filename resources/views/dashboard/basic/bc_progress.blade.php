@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	@include('layouts/head')
-	@include('layouts/head-bottom-link')
-</head>
-
-<!-- [ Main Content ] start -->
-<div class="pc-container">
-	<div class="pcoded-content">
+@extends('layouts.base',
+    ['breadcrumbTitle' => 'Dashboard sale',
+    'to'               => '/mpa/home',
+    'toName'           => 'Home'
+    ]
+)
+@section('content')
 		<!-- [ Main Content ] start -->
 		<div class="row mb-3">
 				<div class="col-md-8">
@@ -144,16 +141,4 @@
 			<!-- [ progress ] end -->
 		</div>
 		<!-- [ Main Content ] end -->
-	</div>
-</div>
-<!-- [ Main Content ] end -->
-@include('layouts/footer')
-<script>
-	$(".bd-toggle-animated-progress").on("click", function() {
-		$(this).siblings(".progress").find(".progress-bar-striped").toggleClass("progress-bar-animated")
-	})
-</script>
-
-</body>
-
-</html>
+@endsection

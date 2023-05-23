@@ -27,6 +27,5 @@
         <!-- customer-section end -->
     </div>
     <!-- [ Main Content ] end -->
-    </div>
 @endsection
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>

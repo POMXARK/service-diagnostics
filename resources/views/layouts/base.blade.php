@@ -67,7 +67,9 @@
                        style="position: absolute; right: -10px;"></i>
                 </a>
             </div>
+            @section('sidebar')
             <div id="vue-sidebar"></div>
+            @show
         </div>
     </nav>
     <!-- [ navigation menu ] end -->

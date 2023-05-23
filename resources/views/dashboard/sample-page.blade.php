@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    @include('layouts.head')
-    @include('layouts.head-bottom-link')
-</head>
-
-<!-- [ Main Content ] start -->
-<div class="pc-container">
-    <div class="pcoded-content">
+@extends('layouts.base',
+    ['breadcrumbTitle' => 'Dashboard sale',
+    'to'               => '/mpa/home',
+    'toName'           => 'Home'
+    ]
+)
+@section('content')
         <!-- [ breadcrumb ] start -->
         <div class="page-header">
             <div class="page-block">
@@ -49,11 +45,4 @@
             <!-- [ sample-page ] end -->
         </div>
         <!-- [ Main Content ] end -->
-    </div>
-</div>
-<!-- [ Main Content ] end -->
-@include('layouts.footer')
-
-</body>
-
-</html>
+@endsection
