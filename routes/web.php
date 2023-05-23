@@ -34,8 +34,12 @@ Route::get('/about_laravel', function () {
 Route::get('/ws/table', [GraphController::class, 'newEvent']);
 
 Route::get('/', function () {
-    return view('/mpa/index');
+    return view('select_site');
 })->name('main');
+
+Route::get('/mpa/dashboard', function () {
+    return view('/mpa/dashboard/dashboard');
+});
 
 Route::prefix('mpa')->group(function () {
     Route::middleware(['auth'])->group(function () {
