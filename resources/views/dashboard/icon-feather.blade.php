@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('layouts/head')
-    @include('layouts/head-bottom-link')
+    @include('layouts.head')
+    @include('layouts.head-bottom-link')
 </head>
-@include('layouts/layout-vertical')
+@include('layouts.layout-vertical')
 <!-- [ Main Content ] start -->
 <div class="pc-container">
     <div class="pcoded-content">
@@ -33,7 +33,8 @@
                 <div class="card">
                     <div class="card-header">
                         <h5>Feather Icon</h5>
-                        <p>Use svg icon with <code>&lt;i data-feather="&lt;&lt; Copyed code &gt;&gt;"&gt;</code> in you html code</p>
+                        <p>Use svg icon with <code>&lt;i data-feather="&lt;&lt; Copyed code &gt;&gt;"&gt;</code> in you
+                            html code</p>
                     </div>
                     <div class="card-body text-center">
                         <div class="row justify-content-center">
@@ -51,7 +52,7 @@
     </div>
 </div>
 <!-- [ Main Content ] end -->
-@include('layouts/footer')
+@include('layouts.footer')
 <script type="text/javascript">
     var iconlist = ['alert-octagon', 'alert-circle', 'activity', 'alert-triangle', 'align-center', 'airplay', 'align-justify', 'align-left', 'align-right', 'arrow-down-left',
         'arrow-down-right', 'anchor', 'aperture', 'arrow-left', 'arrow-right', 'arrow-down', 'arrow-up-left', 'arrow-up-right', 'arrow-up', 'award', 'bar-chart', 'at-sign',
@@ -80,10 +81,10 @@
             '<i data-feather="' + iconlist[i] + '"></i>' +
             '</div>');
     }
-    $(window).on('load', function() {
-        $("#icon-search").on("keyup", function() {
+    $(window).on('load', function () {
+        $("#icon-search").on("keyup", function () {
             var g = $(this).val().toLowerCase();
-            $(".i-main .i-block").each(function() {
+            $(".i-main .i-block").each(function () {
                 var t = $(this).attr('data-filter');
                 if (t) {
                     var s = t.toLowerCase();

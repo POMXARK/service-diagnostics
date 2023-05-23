@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-	@include('layouts/head')
-	@include('layouts/head-bottom-link')
+    @include('layouts.head')
+    @include('layouts.head-bottom-link')
 </head>
-    <body>
-        <div id="vue-auth-sign-in"></div>
-    </body>
+<body>
+<div id="vue-auth-sign-in"></div>
+</body>
 </html>

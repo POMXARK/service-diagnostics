@@ -1,6 +1,6 @@
 @extends('layouts.base',
     ['breadcrumbTitle' => 'Dashboard sale',
-    'to'               => '/',
+    'to'               => '/mpa/home',
     'toName'           => 'Home'
     ]
 )
@@ -9,20 +9,20 @@
     <div class="row">
         <!-- support-section start -->
         <div class="col-xl-6 col-md-12">
-            @include('mpa.dashboard.statistics')
+            @include('dashboard.components.statistics')
         </div>
         <div class="col-xl-6 col-md-12">
-            @include('mpa.dashboard.graph_sales')
+            @include('dashboard.components.graph_sales')
         </div>
         <!-- support-section end -->
         <!-- customer-section start -->
         <div class="col-xl-6 col-md-12">
-            @include('mpa.dashboard.satisfaction')
-            @include('mpa.dashboard.new_products')
+            @include('dashboard.components.satisfaction')
+            @include('dashboard.components.new_products')
         </div>
         <div class="col-xl-6 col-md-12">
-            @include('mpa.dashboard.sales')
-            @include('mpa.dashboard.feeds')
+            @include('dashboard.components.sales')
+            @include('dashboard.components.feeds')
         </div>
         <!-- customer-section end -->
     </div>

@@ -9,7 +9,8 @@
 </head>
 <body>
 <div>
-    <a href="/mpa/dashboard">MPA</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/mpa/home">MPA</a>
     <a href="/spa/index">SPA</a>
 </div>
 </body>

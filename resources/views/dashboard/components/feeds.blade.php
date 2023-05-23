@@ -4,6 +4,7 @@
     </div>
     <div class="feed-scroll" style="height:385px;position:relative;">
         <div class="card-body">
+
             <div class="row m-b-25 align-items-center">
                 <div class="col-auto p-r-0">
                     <i data-feather="bell" class="bg-light-primary feed-icon p-2 wid-30 hei-30"></i>
@@ -14,7 +15,9 @@
                     </a>
                 </div>
             </div>
+
             <div class="row m-b-25 align-items-center">
+
                 <div class="col-auto p-r-0">
                     <i data-feather="shopping-cart" class="bg-light-danger feed-icon p-2 wid-30 hei-30"></i>
                 </div>
@@ -24,6 +27,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="row m-b-25 align-items-center">
                 <div class="col-auto p-r-0">
                     <i data-feather="file-text" class="bg-light-success feed-icon p-2 wid-30 hei-30"></i>
@@ -34,6 +38,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="row m-b-25 align-items-center">
                 <div class="col-auto p-r-0">
                     <i data-feather="bell" class="bg-light-primary feed-icon p-2 wid-30 hei-30"></i>
@@ -44,6 +49,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="row m-b-25 align-items-center">
                 <div class="col-auto p-r-0">
                     <i data-feather="file-text" class="bg-light-success feed-icon p-2 wid-30 hei-30"></i>
@@ -54,6 +60,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="row m-b-25 align-items-center">
                 <div class="col-auto p-r-0">
                     <i data-feather="shopping-cart" class="bg-light-danger feed-icon p-2 wid-30 hei-30"></i>
@@ -64,6 +71,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="row m-b-25 align-items-center">
                 <div class="col-auto p-r-0">
                     <i data-feather="shopping-cart" class="bg-light-danger feed-icon p-2 wid-30 hei-30"></i>
@@ -74,6 +82,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="row m-b-25 align-items-center">
                 <div class="col-auto p-r-0">
                     <i data-feather="file-text" class="bg-light-success feed-icon p-2 wid-30 hei-30"></i>
@@ -84,6 +93,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="row m-b-0 align-items-center">
                 <div class="col-auto p-r-0">
                     <i data-feather="bell" class="bg-light-primary feed-icon p-2 wid-30 hei-30"></i>
@@ -94,6 +104,8 @@
                     </a>
                 </div>
             </div>
+
+            {{-- TODO выводить через контролер вернуть json--}}
         </div>
     </div>
 </div>

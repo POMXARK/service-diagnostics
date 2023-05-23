@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('layouts/head')
-    @include('layouts/head-bottom-link')
+    @include('layouts.head')
+    @include('layouts.head-bottom-link')
 </head>
-@include('layouts/layout-vertical')
+@include('layouts.layout-vertical')
 <!-- [ Main Content ] start -->
 <section class="pc-container">
     <div class="pcoded-content">
@@ -60,7 +60,7 @@
 </section>
 
 <!-- [ Main Content ] end -->
-@include('layouts/footer')
+@include('layouts.footer')
 <!-- google-map Js -->
 
 {{--<script type="module" src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>--}}

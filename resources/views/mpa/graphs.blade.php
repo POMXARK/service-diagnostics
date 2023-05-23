@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-@include('layouts/head')
-@include('layouts/head-bottom-link')
-</head>
-<body>
-@include('layouts/layout-vertical')
-<div class="pc-container">
-    <div class="card p-3">
-        <div id="vue-graphs"></div>
+@extends('layouts.base',
+    ['breadcrumbTitle' => 'Graphs',
+    'to'               => '/mpa/home',
+    'toName'           => 'Home'
+    ]
+)
+@section('content')
+    <!-- [ Main Content ] start -->
+    <div class="row">
+        <div class="card p-3">
+            <div id="vue-graphs"></div>
+        </div>
     </div>
-</div>
-<script type="module" src="/js/app.js"></script>
-</body>
-</html>
+@endsection

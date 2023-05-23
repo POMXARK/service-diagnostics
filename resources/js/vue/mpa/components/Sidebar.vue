@@ -31,7 +31,7 @@
                     class="pc-mtext">Table</span></a>
             </li>
             <li class="pc-item">
-                <a href="/mpa/public" class="pc-link "><span class="pc-micon">
+                <a href="/dashboard" class="pc-link "><span class="pc-micon">
                     <ico class="icon" size="20" name="dashboard"></ico>
                 </span><span
                     class="pc-mtext">Dashboard</span></a>
@@ -48,22 +48,21 @@
                     <i data-feather="chevron-right"></i>
                 </span></a>
                 <ul class="pc-submenu">
-                    <li class="pc-item"><a class="pc-link" href="bc_alert">Alert</a></li>
-                    <li class="pc-item"><a class="pc-link" href="bc_button">Button</a></li>
-                    <li class="pc-item"><a class="pc-link" href="bc_badges">Badges</a></li>
-                    <li class="pc-item"><a class="pc-link" href="bc_breadcrumb-pagination">Breadcrumb & paggination</a>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_alert">Alert</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_button">Button</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_badges">Badges</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_breadcrumb-pagination">Breadcrumb & paggination</a>
                     </li>
-                    <li class="pc-item"><a class="pc-link" href="bc_card">Cards</a></li>
-                    <li class="pc-item"><a class="pc-link" href="bc_collapse">Collapse</a></li>
-                    <li class="pc-item"><a class="pc-link" href="bc_carousel">Carousel</a></li>
-                    <li class="pc-item"><a class="pc-link" href="bc_progress">Progress</a></li>
-                    <li class="pc-item"><a class="pc-link" href="bc_modal">Modal</a></li>
-
-                    <li class="pc-item"><a class="pc-link" href="bc_typography">Typography</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_card">Cards</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_collapse">Collapse</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_carousel">Carousel</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_progress">Progress</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_modal">Modal</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/basic/bc_typography">Typography</a></li>
                 </ul>
             </li>
             <li class="pc-item">
-                <a href="icon-feather" class="pc-link "><span class="pc-micon">
+                <a href="/dashboard/icon-feather" class="pc-link "><span class="pc-micon">
                     <ico class="icon" size="20" name="history_edu"></ico>
                 </span><span class="pc-mtext">Icons</span></a>
             </li>
@@ -77,17 +76,17 @@
                     class="pc-mtext">Forms Elements</span><span class="pc-arrow"><i
                     data-feather="chevron-right"></i></span></a>
                 <ul class="pc-submenu">
-                    <li class="pc-item"><a class="pc-link" href="form_elements">Form Basic</a></li>
-                    <li class="pc-item"><a class="pc-link" href="form2_input_group">Input Groups</a></li>
-                    <li class="pc-item"><a class="pc-link" href="form2_checkbox">Checkbox</a></li>
-                    <li class="pc-item"><a class="pc-link" href="form2_radio">Radio</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/form/form_elements">Form Basic</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/form/form2_input_group">Input Groups</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/form/form2_checkbox">Checkbox</a></li>
+                    <li class="pc-item"><a class="pc-link" href="/dashboard/form/form2_radio">Radio</a></li>
                 </ul>
             </li>
             <li class="pc-item pc-caption">
                 <label class="adaptive-content">table</label>
             </li>
             <li class="pc-item">
-                <a href="tbl_bootstrap" class="pc-link "><span class="pc-micon">
+                <a href="/dashboard/tbl_bootstrap" class="pc-link "><span class="pc-micon">
                     <ico class="icon" size="20" name="table_rows"></ico>
                 </span><span
                     class="pc-mtext">Bootstrap table</span></a>
@@ -97,13 +96,13 @@
                 <span>Tones of readymade charts</span>
             </li>
             <li class="pc-item adaptive-content">
-                <a href="/mpa/chart-apex" class="pc-link "><span class="pc-micon">
+                <a href="/dashboard/chart-apex" class="pc-link "><span class="pc-micon">
                     <ico class="icon" size="20" name="bubble_chart"></ico>
                 </span><span
                     class="pc-mtext">Chart</span></a>
             </li>
             <li class="pc-item adaptive-content">
-                <a href="/mpa/map-google" class="pc-link "><span class="pc-micon">
+                <a href="/dashboard/map-google" class="pc-link "><span class="pc-micon">
                     <ico class="icon" size="20" name="my_location"></ico>
                 </span><span
                     class="pc-mtext">Maps</span></a>
@@ -169,7 +168,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="pc-item"><a href="/mpa/sample-page" class="pc-link "><span class="pc-micon">
+            <li class="pc-item"><a href="/dashboard/sample-page" class="pc-link "><span class="pc-micon">
                 <ico class="icon" size="20" name="storefront"></ico>
             </span><span class="pc-mtext">Sample page</span></a></li>
         </ul>

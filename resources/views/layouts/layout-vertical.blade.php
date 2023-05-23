@@ -1,4 +1,3 @@
-
 <body class="@@bodyclass">
 	<!-- [ Pre-loader ] start -->
 	<div class="loader-bg">

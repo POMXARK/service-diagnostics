@@ -5,7 +5,6 @@
 <head>
 {{--    @include('layouts/head')--}}
 {{--    @include('layouts/head-bottom-link')--}}
-    <link href="/css/app.css" rel="stylesheet">
     <link href="/css/feather.css" rel="stylesheet">
     <link href="/css/material.css" rel="stylesheet">
 

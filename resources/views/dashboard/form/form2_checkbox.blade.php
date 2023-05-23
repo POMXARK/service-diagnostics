@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    @include('layouts/head')
-    @include('layouts/head-bottom-link')
+    @include('layouts.head')
+    @include('layouts.head-bottom-link')
 </head>
-@include('layouts/layout-vertical')
+@include('layouts.layout-vertical')
 <!-- [ Main Content ] start -->
 <section class="pc-container">
     <div class="pcoded-content">
@@ -15,12 +15,12 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">Radio</h5>
+                            <h5 class="m-b-10">Checkbox</h5>
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="#!">Form Components</a></li>
-                            <li class="breadcrumb-item">Radio</li>
+                            <li class="breadcrumb-item">Checkbox</li>
                         </ul>
                     </div>
                 </div>
@@ -33,29 +33,31 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Basic radio</h5>
+                        <h5>Basic Checkbox</h5>
                     </div>
                     <div class="card-body">
                         <form>
                             <div class="form-group row">
-                                <label class="col-3 col-form-label">radioes</label>
+                                <label class="col-3 col-form-label">Checkboxes</label>
                                 <div class="col-9">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         <label class="form-check-label" for="defaultCheck1">
-                                            Default radio
+                                            Default checkbox
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="" id="defaultCheck2" checked>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2"
+                                               checked>
                                         <label class="form-check-label" for="defaultCheck2">
-                                            Checked radio
+                                            Checked checkbox
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="" id="defaultCheck3" disabled>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3"
+                                               disabled>
                                         <label class="form-check-label" for="defaultCheck3">
-                                            Disabled radio
+                                            Disabled checkbox
                                         </label>
                                     </div>
                                 </div>
@@ -64,48 +66,45 @@
                                 <label class="col-3 col-form-label">Inline</label>
                                 <div class="col-9">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineradio1" value="option1">
-                                        <label class="form-check-label" for="inlineradio1">1</label>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                               value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">1</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineradio2" value="option2">
-                                        <label class="form-check-label" for="inlineradio2">2</label>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                               value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">2</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineradio3" value="option3">
-                                        <label class="form-check-label" for="inlineradio3">3</label>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                               value="option3" checked>
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineradio4" value="option4" disabled>
-                                        <label class="form-check-label" for="inlineradio4">4 (disabled)</label>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4"
+                                               value="option4" disabled>
+                                        <label class="form-check-label" for="inlineCheckbox4">4 (disabled)</label>
                                     </div>
-                                    <small class="form-text d-block"><code>.form-check-inline</code> to any <code>.form-check</code></small>
+                                    <small class="form-text"><code>.form-check-inline</code> to any
+                                        <code>.form-check</code></small>
 
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-3 col-form-label">Inline checked state</label>
+                                <label class="col-3 col-form-label">Without Labels</label>
                                 <div class="col-9">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineradiostate1" value="option1">
-                                        <label class="form-check-label" for="inlineradiostate1">1</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox"
+                                               id="blankCheckbox" value="option1" aria-label="...">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineradiostate2" value="option2">
-                                        <label class="form-check-label" for="inlineradiostate2">2</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="radio" name="blankRadio"
+                                               id="blankRadio1" value="option1" aria-label="...">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineradiostate3" value="option3" checked>
-                                        <label class="form-check-label" for="inlineradiostate3">3</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" id="inlineradiostate4" value="option4" disabled>
-                                        <label class="form-check-label" for="inlineradiostate4">4 (disabled)</label>
-                                    </div>
-                                    <small class="form-text d-block"><code>.form-check-inline</code> to any <code>.form-check</code></small>
+                                    <small class="form-text">Add <code>.position-static</code> to inputs within <code>.form-check</code>
+                                        that don’t have any label text</small>
                                 </div>
                             </div>
-
                         </form>
                     </div>
                 </div>
@@ -113,35 +112,38 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Custom radio</h5>
+                        <h5>Custom Checkbox</h5>
                     </div>
                     <div class="card-body">
                         <form>
                             <div class="form-group row">
-                                <label class="col-3 col-form-label">radioes</label>
+                                <label class="col-3 col-form-label">Checkboxes</label>
                                 <div class="col-9">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Default radio
+                                            Default checkbox
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                               checked>
                                         <label class="form-check-label" for="flexCheckChecked">
-                                            Checked radio
+                                            Checked checkbox
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" disabled>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled"
+                                               disabled>
                                         <label class="form-check-label" for="flexCheckDisabled">
-                                            Disabled radio
+                                            Disabled checkbox
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="" id="flexCheckCheckedDisabled" checked disabled>
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="flexCheckCheckedDisabled" checked disabled>
                                         <label class="form-check-label" for="flexCheckCheckedDisabled">
-                                            Disabled checked radio
+                                            Disabled checked checkbox
                                         </label>
                                     </div>
                                 </div>
@@ -150,60 +152,46 @@
                                 <label class="col-3 col-form-label">Inline</label>
                                 <div class="col-9">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="" id="customCheckinlh1">
+                                        <input class="form-check-input" type="checkbox" value="" id="customCheckinlh1">
                                         <label class="form-check-label" for="customCheckinlh1">
                                             1
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="" id="customCheckinlh2">
+                                        <input class="form-check-input" type="checkbox" value="" id="customCheckinlh2">
                                         <label class="form-check-label" for="customCheckinlh2">
                                             2
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="" id="customCheckinlh3">
+                                        <input class="form-check-input" type="checkbox" value="" id="customCheckinlh3"
+                                               checked>
                                         <label class="form-check-label" for="customCheckinlh3">
                                             3
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="" id="customCheckinlh4" disabled>
+                                        <input class="form-check-input" type="checkbox" value="" id="customCheckinlh4"
+                                               disabled>
                                         <label class="form-check-label" for="customCheckinlh4">
                                             4 (disabled)
                                         </label>
                                     </div>
-                                    <small class="form-text d-block text-muted">Add <code>.form-check-inline</code> to any <code>.custom-control</code></small>
+                                    <small class="form-text text-muted">Add <code>.form-check-inline</code> to any
+                                        <code>.custom-control</code></small>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-3 col-form-label">Inline Radio Checked State </label>
+                                <label class="col-3 col-form-label">Indeterminate</label>
                                 <div class="col-9">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="" id="customCheckinlhstate1">
-                                        <label class="form-check-label" for="customCheckinlhstate1">
-                                            1
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="customCheckint1">
+                                        <label class="form-check-label" for="customCheckint1">
+                                            Indeterminate checkbox
                                         </label>
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="" id="customCheckinlhstate2">
-                                        <label class="form-check-label" for="customCheckinlhstate2">
-                                            2
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="" id="customCheckinlhstate3" checked>
-                                        <label class="form-check-label" for="customCheckinlhstate3">
-                                            3
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" value="" id="customCheckinlhstate4" disabled>
-                                        <label class="form-check-label" for="customCheckinlhstate4">
-                                            4 (disabled)
-                                        </label>
-                                    </div>
-                                    <small class="form-text d-block text-muted">Add <code>checked</code> attribute to any <code>.form-check-input</code></small>
+                                    <small class="form-text text-muted"><code>$('.your-checkbox').prop('indeterminate',
+                                            true)</code></small>
                                 </div>
                             </div>
                         </form>
@@ -222,31 +210,38 @@
                                     <div class="form-group">
                                         <label>Color States</label>
                                         <div class="form-check">
-                                            <input class="form-check-input input-primary" type="radio" id="customCheckc1" checked>
+                                            <input class="form-check-input input-primary" type="checkbox"
+                                                   id="customCheckc1" checked>
                                             <label class="form-check-label" for="customCheckc1">primary</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-secondary" type="radio" id="customCheckc2" checked>
+                                            <input class="form-check-input input-secondary" type="checkbox"
+                                                   id="customCheckc2" checked>
                                             <label class="form-check-label" for="customCheckc2">secondary</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-success" type="radio" id="customCheckc3" checked>
+                                            <input class="form-check-input input-success" type="checkbox"
+                                                   id="customCheckc3" checked>
                                             <label class="form-check-label" for="customCheckc3">success</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-danger" type="radio" id="customCheckc4" checked>
+                                            <input class="form-check-input input-danger" type="checkbox"
+                                                   id="customCheckc4" checked>
                                             <label class="form-check-label" for="customCheckc4">danger</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-warning" type="radio" id="customCheckc5" checked>
+                                            <input class="form-check-input input-warning" type="checkbox"
+                                                   id="customCheckc5" checked>
                                             <label class="form-check-label" for="customCheckc5">warning</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-info" type="radio" id="customCheckc6" checked>
+                                            <input class="form-check-input input-info" type="checkbox"
+                                                   id="customCheckc6" checked>
                                             <label class="form-check-label" for="customCheckc6">info</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-dark" type="radio" id="customCheckc7" checked>
+                                            <input class="form-check-input input-dark" type="checkbox"
+                                                   id="customCheckc7" checked>
                                             <label class="form-check-label" for="customCheckc7">dark</label>
                                         </div>
                                         <small class="form-text text-muted">Some help text goes here</small>
@@ -256,31 +251,38 @@
                                     <div class="form-group">
                                         <label>Color States</label>
                                         <div class="form-check">
-                                            <input class="form-check-input input-light-primary" type="radio" id="customCheckclight1" checked>
+                                            <input class="form-check-input input-light-primary" type="checkbox"
+                                                   id="customCheckclight1" checked>
                                             <label class="form-check-label" for="customCheckclight1">primary</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-light-secondary" type="radio" id="customCheckclight2" checked>
+                                            <input class="form-check-input input-light-secondary" type="checkbox"
+                                                   id="customCheckclight2" checked>
                                             <label class="form-check-label" for="customCheckclight2">secondary</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-light-success" type="radio" id="customCheckclight3" checked>
+                                            <input class="form-check-input input-light-success" type="checkbox"
+                                                   id="customCheckclight3" checked>
                                             <label class="form-check-label" for="customCheckclight3">success</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-light-danger" type="radio" id="customCheckclight4" checked>
+                                            <input class="form-check-input input-light-danger" type="checkbox"
+                                                   id="customCheckclight4" checked>
                                             <label class="form-check-label" for="customCheckclight4">danger</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-light-warning" type="radio" id="customCheckclight5" checked>
+                                            <input class="form-check-input input-light-warning" type="checkbox"
+                                                   id="customCheckclight5" checked>
                                             <label class="form-check-label" for="customCheckclight5">warning</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-light-info" type="radio" id="customCheckclight6" checked>
+                                            <input class="form-check-input input-light-info" type="checkbox"
+                                                   id="customCheckclight6" checked>
                                             <label class="form-check-label" for="customCheckclight6">info</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input input-light-dark" type="radio" id="customCheckclight7" checked>
+                                            <input class="form-check-input input-light-dark" type="checkbox"
+                                                   id="customCheckclight7" checked>
                                             <label class="form-check-label" for="customCheckclight7">dark</label>
                                         </div>
                                         <small class="form-text text-muted">Some help text goes here</small>
@@ -297,7 +299,10 @@
     </div>
 </section>
 <!-- [ Main Content ] end -->
-@include('layouts/footer')
+@include('layouts.footer')
+<script>
+    $('#customCheckint1').prop('indeterminate', true)
+</script>
 
 </body>
 

@@ -7,7 +7,6 @@
     <title>jQuery, popper.js, and Bootstrap</title>
 
     {{--    Load compiled CSS    --}}
-    <link rel="stylesheet" href={{ asset('css/app.css') }}>
 
     {{--  popper.js CSS example  --}}
     <style>
