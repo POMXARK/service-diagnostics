@@ -12,7 +12,7 @@
     <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-{{--@include('layouts/layout-vertical')--}}
+{{----}}
 <div class="pc-container">
     <div class="card p-3">
     <div id="chart" style="width: 80%; height:  80%"></div>

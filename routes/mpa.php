@@ -7,47 +7,30 @@ Route::prefix('mpa')->group(function () {
     Route::middleware(['auth'])->group(function () {
         Route::get('/logout', [LogoutController::class, 'perform'])->name('logout');
 
-
         Route::get('confirm/{ObjAi}', [Obj1AiController::class, 'confirm']);
 
         Route::get('sensors', function () {
-            return view('/mpa/sensors');
+            return view('mpa/sensors');
         });
 
-
         Route::get('home', function () {
-            return view('/mpa/_home');
+            return view('mpa/_home');
         });
 
         Route::get('table', function () {
-            return view('/mpa/table');
-        });
-
-        Route::get('apexcharts_test', function () {
-            return view('/mpa/apexcharts_test');
+            return view('mpa/table');
         });
 
         Route::get('graphs', function () {
-            return view('/mpa/graphs');
+            return view('mpa/graphs');
         });
 
         Route::get('auth-signup', function () {
-            return view('/mpa/auth-signup');
-        });
-
-        Route::get('script_test', function () {
-            return view('/mpa/script_test');
+            return view('mpa/auth-signup');
         });
 
         Route::get('vue_test', function () {
-            return view('/mpa/vue_test');
-        });
-        Route::get('bootstrap_popperjs_test', function () {
-            return view('/mpa/bootstrap_popperjs_test');
-        });
-
-        Route::get('align_test', function () {
-            return view('/mpa/align_test');
+            return view('mpa/vue_test');
         });
     });
 });

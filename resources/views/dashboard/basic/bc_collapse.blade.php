@@ -4,7 +4,7 @@
 	@include('layouts/head')
 	@include('layouts/head-bottom-link')
 </head>
-@include('layouts/layout-vertical')
+
 <!-- [ Main Content ] start -->
 <div class="pc-container">
 	<div class="pcoded-content">
