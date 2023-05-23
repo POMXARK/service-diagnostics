@@ -41,6 +41,8 @@ mix.combine([
     'resources/assets/jquery_modules/js/plugins/feather.min.js',
     'resources/assets/jquery_modules/js/pcoded.js',
     'resources/assets/jquery_modules/js/pages/dashboard-sale.js',
+    'resources/assets/jquery_modules/js/plugins/gmaps.min.js',
+    'resources/assets/jquery_modules/js/pages/google-maps.js',
 ],'public/js/mpa/all-files.js' )
 
 //Хотя это связано с затратами на компиляцию/производительность,
