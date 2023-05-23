@@ -5,6 +5,7 @@
     <div class="pro-scroll" style="height:255px;position:relative;">
         <div class="card-body p-0">
             <div class="table-responsive">
+
                 <table class="table table-hover m-b-0">
                     <thead>
                     <tr>
@@ -61,6 +62,7 @@
                         <td>$20</td>
                         <td><a href="#!"><i class="icon feather icon-edit f-16 text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
                     </tr>
+
                     <tr>
                         <td>HeadPhone</td>
                         <td><img src="{{ asset('images/widget/p1.jpg') }}" alt="" class="img-20"></td>
@@ -70,17 +72,13 @@
                         <td>$50</td>
                         <td><a href="#!"><i class="icon feather icon-edit f-16 text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
                     </tr>
-                    <tr>
-                        <td>Iphone 6</td>
-                        <td><img src="{{ asset('images/widget/p2.jpg') }}" alt="" class="img-20"></td>
-                        <td>
-                            <div><label class="badge bg-light-danger">Cancel</label></div>
-                        </td>
-                        <td>$30</td>
-                        <td><a href="#!"><i class="icon feather icon-edit f-16 text-success"></i></a><a href="#!"><i class="feather icon-trash-2 ml-3 f-16 text-danger"></i></a></td>
-                    </tr>
+
+                    {{-- TODO сделать контроллер и данные по продуктам брать из контролера --}}
+{{--                    @include('mpa.partials.new_product_slot', [])--}}
+
                     </tbody>
                 </table>
+
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@
             @include('mpa.dashboard.statistics')
         </div>
         <div class="col-xl-6 col-md-12">
-            @include('mpa.dashboard.total_sales')
+            @include('mpa.dashboard.graph_sales')
         </div>
         <!-- support-section end -->
         <!-- customer-section start -->
