@@ -33,12 +33,14 @@ Route::get('/about_laravel', function () {
 
 Route::get('/ws/table', [GraphController::class, 'newEvent']);
 
+Route::get('/', function () {
+    return view('/mpa/index');
+})->name('main');
+
 Route::prefix('mpa')->group(function () {
     Route::middleware(['auth'])->group(function () {
         Route::get('/logout', [LogoutController::class, 'perform'])->name('logout');
-        Route::get('/', function () {
-            return view('/mpa/index');
-        })->name('main');
+
 
         Route::get('confirm/{ObjAi}', [Obj1AiController::class, 'confirm']);
 

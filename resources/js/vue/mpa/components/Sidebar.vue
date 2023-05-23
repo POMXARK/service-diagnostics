@@ -5,26 +5,35 @@
                 <label class="adaptive-content">Navigation</label>
             </li>
             <li class="pc-item">
-                <a href="/mpa/home" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
-                    class="pc-mtext">Home</span></a>
+                <a href="/mpa/home" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="home"></ico>
+                </span><span class="pc-mtext">Home</span>
+                </a>
             </li>
             <li class="pc-item">
-                <a href="/mpa/graphs" class="pc-link "><span class="pc-micon"><i
-                    class="material-icons-two-tone">home</i></span><span
-                    class="pc-mtext">Graphs</span></a>
+                <a href="/mpa/graphs" class="pc-link ">
+                    <span class="pc-micon">
+<!--                    <i class="material-icons-two-tone">home</i>-->
+                  <ico class="icon" size="20" name="graph"></ico>
+                </span>
+                    <span class="pc-mtext">Graphs</span></a>
             </li>
             <li class="pc-item">
-                <a href="/mpa/sensors" class="pc-link "><span class="pc-micon"><i
-                    class="material-icons-two-tone">home</i></span><span
+                <a href="/mpa/sensors" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="sensors"></ico>
+                </span><span
                     class="pc-mtext">Sensors</span></a>
             </li>
             <li class="pc-item">
-                <a href="/mpa/table" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span
+                <a href="/mpa/table" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="table" viewBox="0 96 960 960"></ico>
+                </span><span
                     class="pc-mtext">Table</span></a>
             </li>
             <li class="pc-item">
-                <a href="/mpa/public" class="pc-link "><span class="pc-micon"><i
-                    class="material-icons-two-tone">home</i></span><span
+                <a href="/mpa/public" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="dashboard"></ico>
+                </span><span
                     class="pc-mtext">Dashboard</span></a>
             </li>
             <li class="pc-item pc-caption">
@@ -32,9 +41,12 @@
                 <span class="adaptive-content">UI Components</span>
             </li>
             <li class="pc-item pc-hasmenu adaptive-content">
-                <a href="#!" class="pc-link "><span class="pc-micon"><i
-                    class="material-icons-two-tone">business_center</i></span><span class="pc-mtext">Basic</span><span
-                    class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                <a href="#!" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="business_center"></ico>
+                </span><span class="pc-mtext">Basic</span><span
+                    class="pc-arrow">
+                    <i data-feather="chevron-right"></i>
+                </span></a>
                 <ul class="pc-submenu">
                     <li class="pc-item"><a class="pc-link" href="bc_alert">Alert</a></li>
                     <li class="pc-item"><a class="pc-link" href="bc_button">Button</a></li>
@@ -51,15 +63,17 @@
                 </ul>
             </li>
             <li class="pc-item">
-                <a href="icon-feather" class="pc-link "><span class="pc-micon"><i
-                    class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Icons</span></a>
+                <a href="icon-feather" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="history_edu"></ico>
+                </span><span class="pc-mtext">Icons</span></a>
             </li>
             <li class="pc-item pc-caption">
                 <label class="adaptive-content">Forms</label>
             </li>
             <li class="pc-item pc-hasmenu adaptive-content">
-                <a href="#!" class="pc-link "><span class="pc-micon"><i
-                    class="material-icons-two-tone">edit</i></span><span
+                <a href="#!" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="edit"></ico>
+                </span><span
                     class="pc-mtext">Forms Elements</span><span class="pc-arrow"><i
                     data-feather="chevron-right"></i></span></a>
                 <ul class="pc-submenu">
@@ -73,8 +87,9 @@
                 <label class="adaptive-content">table</label>
             </li>
             <li class="pc-item">
-                <a href="tbl_bootstrap" class="pc-link "><span class="pc-micon"><i
-                    class="material-icons-two-tone">table_rows</i></span><span
+                <a href="tbl_bootstrap" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="table_rows"></ico>
+                </span><span
                     class="pc-mtext">Bootstrap table</span></a>
             </li>
             <li class="pc-item pc-caption adaptive-content">
@@ -82,11 +97,15 @@
                 <span>Tones of readymade charts</span>
             </li>
             <li class="pc-item adaptive-content">
-                <a href="/mpa/chart-apex" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">bubble_chart</i></span><span
+                <a href="/mpa/chart-apex" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="bubble_chart"></ico>
+                </span><span
                     class="pc-mtext">Chart</span></a>
             </li>
             <li class="pc-item adaptive-content">
-                <a href="/mpa/map-google" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">my_location</i></span><span
+                <a href="/mpa/map-google" class="pc-link "><span class="pc-micon">
+                    <ico class="icon" size="20" name="my_location"></ico>
+                </span><span
                     class="pc-mtext">Maps</span></a>
             </li>
             <li class="pc-item pc-caption adaptive-content">
@@ -94,8 +113,9 @@
                 <span>Redymade Pages</span>
             </li>
             <li class="pc-item pc-hasmenu adaptive-content">
-                <a href="#!" class="pc-link"><span class="pc-micon"><i
-                    class="material-icons-two-tone">https</i></span><span
+                <a href="#!" class="pc-link"><span class="pc-micon">
+                    <ico class="icon" size="20" name="https"></ico>
+                </span><span
                     class="pc-mtext">Authentication</span><span class="pc-arrow"><i
                     data-feather="chevron-right"></i></span></a>
                 <ul class="pc-submenu">
@@ -108,8 +128,9 @@
                 <span>Extra more things</span>
             </li>
             <li class="pc-item pc-hasmenu adaptive-content">
-                <a href="#!" class="pc-link"><span class="pc-micon"><i
-                    class="material-icons-two-tone">list_alt</i></span><span
+                <a href="#!" class="pc-link"><span class="pc-micon">
+                    <ico class="icon" size="20" name="list_alt"></ico>
+                </span><span
                     class="pc-mtext">Menu levels</span><span class="pc-arrow"><i
                     data-feather="chevron-right"></i></span></a>
                 <ul class="pc-submenu">
@@ -148,13 +169,15 @@
                     </li>
                 </ul>
             </li>
-            <li class="pc-item"><a href="/mpa/sample-page" class="pc-link "><span class="pc-micon"><i
-                class="material-icons-two-tone">storefront</i></span><span class="pc-mtext">Sample page</span></a></li>
+            <li class="pc-item"><a href="/mpa/sample-page" class="pc-link "><span class="pc-micon">
+                <ico class="icon" size="20" name="storefront"></ico>
+            </span><span class="pc-mtext">Sample page</span></a></li>
         </ul>
     </div>
 </template>
 
 <script>
+
 export default {
     created() {
         let body = document.getElementsByTagName('body')[0],
@@ -258,3 +281,13 @@ export default {
     }
 }
 </script>
+
+
+<style scoped>
+.icon {
+    display: block;
+    opacity: 60%;
+    padding: 1px;
+    color: #ced4dc;
+}
+</style>

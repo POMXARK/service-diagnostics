@@ -32,7 +32,11 @@ import App from "./vue/spa/App.vue";
 
 const app = createApp(App)
 // app.component('vue-sidebar', Sidebar)
-app.use(router).mount('#app')
+app
+    // .use(router)
+    .mount('#app')
+
+// import VueIco, {icoClose, icoKeyboardArrowDown} from 'vue-ico'
 
 // Список компонентов и корневых элементов, для рендера
 let renderComponents = [
@@ -43,6 +47,7 @@ let renderComponents = [
     {
         rootSelector: '#vue-sidebar',
         component: Sidebar,
+        render: 'any',
     },
     {
         rootSelector: '#vue-table',
@@ -62,12 +67,54 @@ let renderComponents = [
     },
 ]
 
+import VueIco from 'vue3-ico'; //, icoHomeTwoTone
+
+//
+// Sidebar.use(VueIco, {
+//      "home": icoHome,
+//  });
+
+import {
+    icoHomeTwoTone,
+    icoQueryStatsTwoTone,
+    icoSensorsTwoTone,
+    icoTable,
+    icoDashboardTwoTone,
+    icoBusinessCenterTwoTone,
+    icoHistoryEduTwoTone,
+    icoEditTwoTone,
+    icoTableRowsTwoTone,
+    icoBubbleChartTwoTone,
+    icoMyLocationTwoTone,
+    icoHttpsTwoTone,
+    icoListAltTwoTone,
+    icoStorefrontTwoTone
+} from './vue3-ico-two-tone'
+//const icoHomeTwoTone = (s, c, v) => icoWrapper('<path d="M19,11v9h-5v-6h-4v6H5v-9H3.6L12,3.4l8.4,7.6H19z" opacity=".3"></path><path d="M20,21h-7v-6h-2v6H4v-9H1l11-9.9L23,12h-3V21z M15,19h3v-8.8l-6-5.4l-6,5.4V19h3v-6h6V19z"></path>', s, c);
 // Рендер VUE JS компонентов
 renderComponents.forEach(item => {
-    createApp(item.component).mount(item.rootSelector)
+    let instance = createApp(item.component);
+    if (item.render){
+        instance.use(VueIco, {
+            "home": icoHomeTwoTone,
+            'edit' : icoEditTwoTone,
+            'graph': icoQueryStatsTwoTone,
+            'sensors': icoSensorsTwoTone,
+            'table': icoTable,
+            'dashboard': icoDashboardTwoTone,
+            'business_center' : icoBusinessCenterTwoTone,
+            'history_edu': icoHistoryEduTwoTone,
+            'table_rows': icoTableRowsTwoTone,
+            'bubble_chart': icoBubbleChartTwoTone,
+            'my_location': icoMyLocationTwoTone,
+            'https': icoHttpsTwoTone,
+            'list_alt': icoListAltTwoTone,
+            'storefront': icoStorefrontTwoTone,
+        })
+    }
+    instance.mount(item.rootSelector)
 });
 
-import '../sass/app.scss';
 //import '@fortawesome/fontawesome-free/js/all.min.js'; // vary size
 
 // import Echo from 'laravel-echo';
