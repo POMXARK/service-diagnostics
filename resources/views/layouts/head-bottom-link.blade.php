@@ -10,10 +10,10 @@
 {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />--}}
 
 <script src="{{ mix('/js/manifest.js') }}"></script>
-<script src="{{ mix('/js/vendor.js') }}"></script>
+{{--<script src="{{ mix('/js/vendor.js') }}"></script>--}}
 <script type="module" src="{{ mix('/js/app.js') }}"></script>
 {{--Обработчик бокового меню--}}
-<script type="module" src="{{ mix('js/mpa/all-files.js') }}"></script>
+{{--<script type="module" src="{{ mix('js/mpa/all-files.js') }}"></script>--}}
 {{--<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>--}}
 
 <script>

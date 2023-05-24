@@ -67,9 +67,7 @@
                        style="position: absolute; right: -10px;"></i>
                 </a>
             </div>
-            @section('sidebar')
             <div id="vue-sidebar"></div>
-            @show
         </div>
     </nav>
     <!-- [ navigation menu ] end -->
@@ -84,7 +82,6 @@
     </header>
     <!-- [ Header ] end -->
 @show
-
 
 <div class="pc-container">
     <div class="pcoded-content">
@@ -113,18 +110,6 @@
 </div>
 
 @section('scripts')
-    <script src="{{ mix('/js/manifest.js') }}"></script>
-    <script src="{{ mix('/js/vendor.js') }}"></script>
-    <script type="module" src="{{ mix('/js/app.js') }}"></script>
-    <script type="module" src="{{ mix('js/mpa/all-files.js') }}"></script>
-    <script>
-        // инициализация всплывающих окон
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-        })
-    </script>
 @show
-
 </body>
 </html>

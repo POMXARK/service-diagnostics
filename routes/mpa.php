@@ -3,11 +3,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\Obj1AiController;
 
+Route::get('confirm/{ObjAi}', [Obj1AiController::class, 'confirm']);
+
 Route::prefix('mpa')->group(function () {
     Route::middleware(['auth'])->group(function () {
         Route::get('/logout', [LogoutController::class, 'perform'])->name('logout');
-
-        Route::get('confirm/{ObjAi}', [Obj1AiController::class, 'confirm']);
 
         Route::get('sensors', function () {
             return view('mpa/sensors');
