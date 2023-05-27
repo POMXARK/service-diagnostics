@@ -3,7 +3,6 @@ import {createRouter, createWebHistory} from "vue-router";
 import {createApp} from 'vue'
 import Welcome from './vue/mpa/components/Welcome'
 import AuthSignIn from "./vue/mpa/components/AuthSignIn.vue";
-import Sidebar from "./vue/mpa/components/Sidebar.vue";
 import Table from "./vue/common/Table.vue";
 import SensorTable from "./vue/mpa/components/SensorTable.vue";
 import Graphs from "./vue/common/Graphs.vue";
@@ -43,11 +42,6 @@ let renderComponents = [
     {
         rootSelector: '#vue-welcome',
         component: Welcome,
-    },
-    {
-        rootSelector: '#vue-sidebar',
-        component: Sidebar,
-        render: 'any',
     },
     {
         rootSelector: '#vue-table',

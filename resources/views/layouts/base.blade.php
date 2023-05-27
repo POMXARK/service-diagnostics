@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     @section('styles')
-        <link rel="preload" href="/fonts/material.woff2" as="font" type="font/woff2" crossorigin>
+        {{-- fonts cdn --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/material-icons@1.13.7/iconfont/material-icons.min.css" rel="stylesheet">
+        {{-- app --}}
         <link href="{{ mix('/css/style.css') }}" rel="stylesheet">
-        <link href="{{ mix('/css/material.css') }}" rel="stylesheet">
-        <link href="{{ mix('/css/feather.css') }}" rel="stylesheet">
     @show
 </head>
 <body>
@@ -67,7 +70,7 @@
                        style="position: absolute; right: -10px;"></i>
                 </a>
             </div>
-            <div id="vue-sidebar"></div>
+            @include('mpa.sidebar')
         </div>
     </nav>
     <!-- [ navigation menu ] end -->
@@ -111,5 +114,6 @@
 
 @section('scripts')
 @show
+
 </body>
 </html>

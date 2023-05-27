@@ -63,8 +63,7 @@
 	<ul class="list-unstyled">
 		<li class="dropdown pc-h-item">
 			<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-{{--				<i class="material-icons-two-tone">search</i>--}}
-                <x-gmdi-search transform="scale(1.3)"/>
+				<i class="material-icons-two-tone">search</i>
 			</a>
 			<div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
 				<form class="px-3">

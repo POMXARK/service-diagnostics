@@ -24,16 +24,20 @@ mix.webpackConfig({
 });
 
 mix.js('resources/js/app.js', 'public/js');
-mix.js('resources/js/vue-sidebar.js', 'public/js');
 mix.js('resources/js/vue-auth-sign-in.js', 'public/js');
 mix.js('resources/js/vue-graphs.js', 'public/js');
 mix.js('resources/js/vue-table.js', 'public/js');
 mix.js('resources/js/vue-components.js', 'public/js');
 mix.js('resources/assets/jquery_modules/js/pcoded.js', 'public/js');
 mix.js('resources/assets/jquery_modules/js/pages/dashboard-sale.js', 'public/js');
+mix.js('resources/assets/jquery_modules/js/pages/chart-apex.js', 'public/js');
+mix.js('resources/js/sidebar.js', 'public/js');
+
+//mix.copyDirectory('resources/assets/fonts', 'public/fonts');
 
 mix.vue();
 
+//mix.sass('resources/assets/scss/themes/_general.scss', 'public/css')
 mix.sass('resources/assets/scss/style.scss', 'public/css')
 
 mix

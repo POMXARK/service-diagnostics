@@ -57,46 +57,5 @@
 
 @section('scripts')
     <!-- google-map Js -->
-
-    <script src="{{ mix('/js/manifest.js') }}"></script>
-    <script src="{{ mix('/js/jquery.js') }}"></script>
-    <script src="{{ mix('/js/bootstrap.js') }}"></script>
-    <script src="{{ mix('/js/axios.js') }}"></script>
-    <script src="{{ mix('js/perfect-scrollbar.js') }}"></script>
-    <script src="{{ mix('/js/vue.js') }}"></script>
-    <script type="module" src="{{ mix('/js/vue-sidebar.js') }}"></script>
-    <script src="{{ mix('/js/app.js') }}"></script>
-    <script src="{{ mix('js/pcoded.js') }}"></script>
-
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDsucrEdmswqYrw0f6ej3bf4M4suDeRgNA"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.9/gmaps.min.js" integrity="sha512-7L86NChc+1jvCKJVMLGnoQLA9QQXVcBvWyr37YaVau42A6zWacZ/ew7EX2eag+ruzEVKeqdLS0pSYgj1yagegA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        // [ basic maps ]
-        var basic;
-        basic = new GMaps({
-            el: '#basic-map',
-            lat: 21.217319,
-            lng: 72.866472,
-            scrollwheel: false
-        });
-        // [ Gmaps ]
-        var map;
-        map = new GMaps({
-            el: '#markers-map',
-            lat: 21.2334329,
-            lng: 72.866472,
-            scrollwheel: false
-        });
-        // [ Add-marker map ]
-        map.addMarker({
-            lat: 21.2334329,
-            lng: 72.866472,
-            title: 'Marker with InfoWindow',
-            infoWindow: {
-                content: '<p><Phoenicoded></Phoenicoded> <br/> Buy Now at <a href="">Themeforest</a></p>'
-            }
-        });
-    </script>
-
+    @include('partials.js_includes', ['page' => 'maps'])
 @endsection
