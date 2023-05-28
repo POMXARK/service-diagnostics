@@ -4,6 +4,12 @@
     'toName'           => 'Home'
     ]
 )
+
+@section('styles')
+    <link href="{{ mix('/css/bootstrap-full.css') }}" rel="stylesheet">
+    @parent
+@endsection
+
 @section('content')
         <!-- [ breadcrumb ] start -->
         <div class="page-header">
@@ -295,13 +301,5 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ mix('/js/manifest.js') }}"></script>
-    <script src="{{ mix('/js/jquery.js') }}"></script>
-    <script src="{{ mix('/js/bootstrap.js') }}"></script>
-    <script src="{{ mix('/js/axios.js') }}"></script>
-    <script src="{{ mix('js/perfect-scrollbar.js') }}"></script>
-    <script src="{{ mix('/js/vue.js') }}"></script>
-
-    <script src="{{ mix('/js/app.js') }}"></script>
-    <script src="{{ mix('js/pcoded.js') }}"></script>
+    @include('partials.js_includes', ['page' => 'forms'])
 @endsection

@@ -4,6 +4,7 @@
     'toName'           => 'Home'
     ]
 )
+
 @section('content')
         <!-- [ Main Content ] start -->
         <div class="row mb-3">

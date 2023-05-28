@@ -4,6 +4,7 @@
     'toName'           => 'Home'
     ]
 )
+
 @section('content')
 		<!-- [ Main Content ] start -->
 		<div class="row mb-3">
@@ -145,4 +146,10 @@
 
 @section('scripts')
     @include('partials.js_includes', ['page' => 'basic'])
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".bd-toggle-animated-progress").on("click", function() {
+            $(this).siblings(".progress").find(".progress-bar-striped").toggleClass("progress-bar-animated")
+        })
+    </script>
 @endsection

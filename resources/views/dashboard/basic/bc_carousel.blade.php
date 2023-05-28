@@ -4,6 +4,7 @@
     'toName'           => 'Home'
     ]
 )
+
 @section('content')
 		<!-- [ Main Content ] start -->
 		<div class="row mb-3">
@@ -21,7 +22,7 @@
 						<h5>Basic Carousel</h5>
 					</div>
 					<div class="card-body">
-						<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+						<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<img class="img-fluid d-block w-100" src="{{ asset('images/slider/img-slide-1.jpg') }}" alt="First slide">
@@ -45,7 +46,7 @@
 						<h5>Carousel Controls</h5>
 					</div>
 					<div class="card-body">
-						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<img class="img-fluid d-block w-100" src="{{ asset('images/slider/img-slide-4.jpg') }}" alt="First slide">
@@ -54,8 +55,8 @@
 									<img class="img-fluid d-block w-100" src="{{ asset('images/slider/img-slide-3.jpg') }}" alt="Second slide">
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -68,11 +69,11 @@
 						<h5>Carousel Indicators</h5>
 					</div>
 					<div class="card-body">
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+								<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+								<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
@@ -82,8 +83,8 @@
 									<img class="img-fluid d-block w-100" src="{{ asset('images/slider/img-slide-3.jpg') }}" alt="Second slide">
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -96,7 +97,7 @@
 						<h5>Carousel Crossfade</h5>
 					</div>
 					<div class="card-body">
-						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<img class="img-fluid d-block w-100" src="{{ asset('images/slider/img-slide-1.jpg') }}" alt="First slide">
@@ -108,8 +109,8 @@
 									<img class="img-fluid d-block w-100" src="{{ asset('images/slider/img-slide-3.jpg') }}" alt="Third slide">
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-							<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+							<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+							<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -122,11 +123,11 @@
 						<h5>Carousel with Captions</h5>
 					</div>
 					<div class="card-body">
-						<div id="carouselExampleIndicatorscaption" class="carousel slide" data-ride="carousel">
+						<div id="carouselExampleIndicatorscaption" class="carousel slide" data-bs-ride="carousel">
 							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+								<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+								<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
@@ -151,8 +152,8 @@
 									</div>
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleIndicatorscaption" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-							<a class="carousel-control-next" href="#carouselExampleIndicatorscaption" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+							<a class="carousel-control-prev" href="#carouselExampleIndicatorscaption" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+							<a class="carousel-control-next" href="#carouselExampleIndicatorscaption" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>
@@ -165,11 +166,11 @@
 						<h5>Dark variant</h5>
 					</div>
 					<div class="card-body">
-						<div id="carouselExampleDark" class="carousel carousel-dark slide" data-ride="carousel">
+						<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
 							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleDark" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleDark" data-slide-to="1"></li>
-								<li data-target="#carouselExampleDark" data-slide-to="2"></li>
+								<li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+								<li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+								<li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
@@ -194,8 +195,8 @@
 									</div>
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-							<a class="carousel-control-next" href="#carouselExampleDark" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+							<a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+							<a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
 						</div>
 					</div>
 				</div>

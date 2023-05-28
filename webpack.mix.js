@@ -39,6 +39,7 @@ mix.vue();
 
 //mix.sass('resources/assets/scss/themes/_general.scss', 'public/css')
 mix.sass('resources/assets/scss/style.scss', 'public/css')
+mix.sass('resources/assets/scss/bootstrap-full.scss', 'public/css')
 
 mix
     .css('resources/assets/fonts/feather.css', 'public/css')
