@@ -15,7 +15,7 @@ Route::prefix('mpa')->group(function () {
 
         Route::get('home', function () {
             return view('mpa/_home');
-        });
+        })->name('home');
 
         Route::get('table', function () {
             return view('mpa/table');
@@ -23,10 +23,6 @@ Route::prefix('mpa')->group(function () {
 
         Route::get('graphs', function () {
             return view('mpa/graphs');
-        });
-
-        Route::get('auth-signup', function () {
-            return view('mpa/auth-signup');
         });
 
         Route::get('vue_test', function () {
