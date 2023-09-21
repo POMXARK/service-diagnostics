@@ -1,3 +1,5 @@
+require('dotenv').config(); // для получения process.env.MIX_PUSHER_HOST из docker
+let webpack = require('webpack')
 const mix = require('laravel-mix');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var LiveReloadPlugin = require('webpack-livereload-plugin');

@@ -41,6 +41,9 @@
         }
     },
     "scripts": {
+        "post-install-cmd": [
+            "chmod -R 775 storage/logs"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
